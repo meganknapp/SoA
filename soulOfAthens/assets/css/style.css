@@ -1,4 +1,53 @@
-body{
+body {
   background: #FFF;
   color: #000;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 375vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+
+.one {
+  background-color: green;
+}
+
+.two {
+  background-color: blue;
+}
+
+.three {
+  background-color: pink;
+}
+
+.four {
+  background-color: red;
+}
+
+.five {
+  background-color: orange;
+}
+
+.outerWrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
