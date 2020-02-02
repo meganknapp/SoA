@@ -6,6 +6,9 @@ body {
 .slide {
   width: 100vw;
   height: 100vh;
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
 }
 
 .wrapper {
@@ -17,23 +20,32 @@ body {
 }
 
 .one {
-  background-color: green;
+  -webkit-filter: grayscale(0);
+  filter: none;
+  background-image: url("https://static.wixstatic.com/media/169b00_f8f0523102874f7db0dad739bcdee219~mv2_d_6016_4016_s_4_2.jpg/v1/fill/w_1184,h_772,al_c,q_85,usm_0.66_1.00_0.01/169b00_f8f0523102874f7db0dad739bcdee219~mv2_d_6016_4016_s_4_2.webp");
 }
 
 .two {
-  background-color: blue;
+  -webkit-filter: grayscale(0);
+  filter: none;
+  background-color: #FFF;
 }
 
 .three {
-  background-color: pink;
+  background-image: url("https://static.wixstatic.com/media/169b00_ea41b411ebab47cfb4ce5cc349761ddb~mv2_d_6016_4016_s_4_2.jpg/v1/fill/w_1872,h_1250,al_c,q_90,usm_0.66_1.00_0.01/_OGP1081.webp");
 }
 
 .four {
-  background-color: red;
+  background-image: url("https://static.wixstatic.com/media/169b00_e78dbd625b0f488285cfc3a14751b317~mv2_d_4667_3152_s_4_2.jpg/v1/fill/w_1092,h_738,al_c,q_85,usm_0.66_1.00_0.01/edges_essay1.webp");
 }
 
 .five {
-  background-color: orange;
+  background-image: url("https://static.wixstatic.com/media/169b00_99a7d688426e4d8fbddc56784a866fa4~mv2_d_6016_4016_s_4_2.jpg/v1/fill/w_1468,h_976,al_c,q_85,usm_0.66_1.00_0.01/_OGP1041.webp");
+}
+
+.three:hover, .four:hover, .five:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
 }
 
 .outerWrapper {
