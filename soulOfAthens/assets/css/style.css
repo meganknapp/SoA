@@ -1,6 +1,18 @@
 body {
   background: #FFF;
   color: #000;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.logo {
+  position: fixed;
+  top: 40px;
+  left: 100px;
+  width: 120px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.75) ;
+  z-index: 100;
 }
 
 .slide {
@@ -9,6 +21,7 @@ body {
   filter: gray; /* IE6-9 */
   -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
   filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+  transition: .5s;
 }
 
 .wrapper {
@@ -45,7 +58,6 @@ body {
 
 .three:hover, .four:hover, .five:hover {
   -webkit-filter: grayscale(0);
-  filter: none;
 }
 
 .outerWrapper {
@@ -62,4 +74,16 @@ body {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.headline {
+  font-family: 'IM Fell Double Pica', serif;
+  font-size: 94px;
+  color: #FFF;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
