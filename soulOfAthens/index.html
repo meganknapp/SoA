@@ -9,71 +9,159 @@
   <meta name="author" content="Megan Knapp, Nicole Dinan, Ryan Valette, Ally Herrera, Herbert Frimpong">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="assets/css/style.css">
   <!-- Bootstrap Stylesheet -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Scrollbar Custom CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,700&display=swap" rel="stylesheet">
+  <!-- FontAwesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-  <div class="scrollIcon"><img src="assets/img/tl_scroll_prompt.svg"></div>
+  <div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+      <div id="dismiss">
+        <i class="fas fa-arrow-left"></i>
+      </div>
 
-  <div class="outerWrapper">
-    <div class="wrapper">
+      <ul class="list-unstyled components">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Black Locust Farms</a>
+        </li>
+        <li>
+          <a href="#">Currents</a>
+        </li>
+        <li>
+          <a href="#">Subamah</a>
+        </li>
+      </ul>
+    </nav>
 
-      <div class="slide one">
-        <div class="headline">
-          <p>Intentional <br> Communities<p>
-        </div> <!-- close headline -->
-      </div> <!-- close slide one -->
+    <!-- Page Content  -->
+    <div id="content">
 
-      <div class="slide two">
-        <div class="define">
-          <div class="ILC">
-            <p>in·ten·tion·al com·mu·ni·ty</p>
-          </div> <!-- close title -->
-          <div class="phonics">
-            <p><b>noun</b>/ inˈten(t)SH(ə)n(ə)l kəˈmyo͞onədē/</p>
-          </div> <!-- close phonics -->
-          <div class="definition">
-            <p>An intentional community is a planned residential community designed from the start to have a high degree of social cohesion and teamwork. The members of an intentional community typically hold a common social, political, religious, or
-              spiritual vision and often follow an alternative lifestyle.</p>
-          </div> <!-- close definition -->
-        </div> <!-- close define -->
-      </div> <!-- close slide two -->
+      <nav>
+        <div class="container-fluid">
 
-      <div class="slide three">
-        <div class="headline">
-          <p>Black Locust Farms<p>
-        </div> <!-- close headline -->
-      </div> <!-- close slide three -->
-
-      <div class="slide four">
-        <div class="headline">
-          <p>Currents</p>
-        </div> <!-- close headline -->
-      </div> <!-- close slide four -->
-
-      <div class="slide five">
-        <div class="headline">
-          <p>Subamah</p>
-        </div> <!-- close headline -->
-      </div> <!-- close slide five -->
-
-      <div class="horizontalFooter"></div> <!-- close slide five -->
-
-    </div> <!-- close wrapper -->
-  </div> <!-- close outerWrapper -->
+          <button type="button" id="sidebarCollapse" class="btn btn-info">
+            <i class="fas fa-align-left"></i>
+            <span>Toggle Sidebar</span>
+          </button>
+          <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-align-justify"></i>
+          </button>
 
 
-  <!-- Javascript -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        </div>
+      </nav>
 
+      <div class="scrollIcon"><img src="assets/img/tl_scroll_prompt.svg"></div>
+
+      <div class="outerWrapper">
+        <div class="innerWrapper">
+
+          <div class="slide one">
+            <div class="headline">
+              <p>Intentional <br> Communities<p>
+            </div> <!-- close headline -->
+          </div> <!-- close slide one -->
+
+          <div class="slide two">
+            <div class="define">
+              <div class="ILC">
+                <p>in·ten·tion·al com·mu·ni·ty</p>
+              </div> <!-- close title -->
+              <div class="phonics">
+                <p><b>noun</b>/ inˈten(t)SH(ə)n(ə)l kəˈmyo͞onədē/</p>
+              </div> <!-- close phonics -->
+              <div class="definition">
+                <p>An intentional community is a planned residential community designed from the start to have a high degree of social cohesion and teamwork. The members of an intentional community typically hold a common social, political,
+                  religious, or
+                  spiritual vision and often follow an alternative lifestyle.</p>
+              </div> <!-- close definition -->
+            </div> <!-- close define -->
+          </div> <!-- close slide two -->
+
+          <a class="slide three" href="blackLocustFarms.html">
+            <div>
+              <div class="headline">
+                <p>Black Locust Farms<p>
+              </div> <!-- close headline -->
+            </div> <!-- close slide three -->
+          </a>
+
+          <a class="slide four" href="currents.html">
+            <div>
+              <div class="headline">
+                <p>Currents</p>
+              </div> <!-- close headline -->
+            </div> <!-- close slide four -->
+          </a>
+
+          <a class="slide five" href="subamah.html">
+            <div>
+              <div class="headline">
+                <p>Subamah</p>
+              </div> <!-- close headline -->
+            </div> <!-- close slide five -->
+          </a>
+
+          <div class="horizontalFooter"></div> <!-- close slide five -->
+
+        </div> <!-- close wrapper -->
+      </div> <!-- close outerWrapper -->
+
+
+      <!-- Javascript -->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+      <div class="overlay"></div>
+
+      <!-- jQuery CDN - Slim version (=without AJAX) -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+      </script>
+      <!-- Popper.JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+      </script>
+      <!-- Bootstrap JS -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+      </script>
+      <!-- jQuery Custom Scroller CDN -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js">
+      </script>
+
+      <script type="text/javascript">
+        $(document).ready(function() {
+          $("#sidebar").mCustomScrollbar({
+            theme: "minimal"
+          });
+
+          $('#dismiss, .overlay').on('click', function() {
+            $('#sidebar').removeClass('active');
+            $('.overlay').removeClass('active');
+          });
+
+          $('#sidebarCollapse').on('click', function() {
+            $('#sidebar').addClass('active');
+            $('.overlay').addClass('active');
+            $('.collapse.in').toggleClass('in');
+            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+          });
+        });
+      </script>
 
 
 </body>
