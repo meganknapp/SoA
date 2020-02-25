@@ -200,6 +200,7 @@ ul a {
 .one {
   -webkit-filter: grayscale(0);
   filter: none;
+  background-size: cover;
   background-image: url("https://images.pexels.com/photos/1382102/pexels-photo-1382102.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
 }
 
@@ -210,14 +211,17 @@ ul a {
 }
 
 .three {
+  background-size: cover;
   background-image: url("https://images.pexels.com/photos/390025/pexels-photo-390025.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
 }
 
 .four {
+  background-size: cover;
   background-image: url("https://images.pexels.com/photos/169523/pexels-photo-169523.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
 }
 
 .five {
+  background-size: cover;
   background-image: url("https://images.pexels.com/photos/265216/pexels-photo-265216.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
 }
 
@@ -308,6 +312,9 @@ ul a {
 }
 
 /* MDIA  */
+
+@media only screen and (max-width: 1102px) {
+
 
 @media only screen and (max-width: 800px) {
   .innerWrapper {
