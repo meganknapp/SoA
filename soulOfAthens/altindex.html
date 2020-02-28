@@ -25,38 +25,60 @@
 <body>
 
 
-<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <a href="#">Black Locust Farms</a>
-    <a href="#">Currents</a>
-    <a href="#">Subamah</a>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#">Black Locust Farms</a>
+      <a href="#">Currents</a>
+      <a href="#">Subamah</a>
+    </div>
   </div>
-</div>
 
-<span class="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <span class="hamburger" onclick="openNav()">&#9776;</span>
+
+  <div class="logo"></div>
 
   <div class="container-fluid landing">
     <div class="row">
       <div class="col-sm-12 text-center introText">
         <h1>Intentional<br>Communities<h1>
       </div>
+      <a href="#" class="scrollDown">
+        <div class="mouse">
+          <div class="mouse-icon">
+            <span class="mouse-wheel"></span>
+          </div>
+        </div>
+      </a>
     </div> <!-- close row -->
+    <div class="topLine"></div>
   </div> <!-- close container -->
 
-  <div class="container">
+  <div class="container info">
+    <div class="bottomLine"></div>
+
     <div class="row">
-      <div class="col-sm-4 text-center border border-warning">
-        <p>in·ten·tion·al com·mu·ni·ty</p>
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8 text-center">
+        <p class="definition text-left">in·ten·tion·al com·mu·ni·ty</p>
+        <p class="phonics text-right"><b>noun</b>/ inˈten(t)SH(ə)n(ə)l kəˈmyo͞onədē/</p>
       </div>
-      <div class="col-sm-8 text-center border border-warning">
-        <p>in·ten·tion·al com·mu·ni·ty</p>
+      <div class="col-sm-2"></div>
+    </div> <!-- close row -->
+
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6 text-center">
+        <p>A group of people who live together or share common facilities and who regularly associate with each other on the basis of explicit common values. Source: ic.org</p>
+        <p>Plunder weigh anchor loaded to the gunwalls scourge of the seven seas Yellow Jack cutlass six pounders Arr clap of thunder topmast. Fire in the hole gibbet coxswain square-rigged cable Barbary Coast heave down capstan scuttle ballast. Hands bounty no prey, no pay loot six pounders broadside crack Jennys tea cup gun poop deck aye.</p>
+        <p>Scroll to explore three commmunities.</p>
       </div>
+      <div class="col-sm-3"></div>
     </div> <!-- close row -->
   </div> <!-- close container -->
 
 
-    <!-- REACT <iframe>
+  <!-- REACT <iframe>
       <div class="reveal">
         <div class="slides">
           <section>Black Locust Farms</section>
@@ -86,13 +108,13 @@
 
   <!-- Sidebar -->
   <script>
-  function openNav() {
-    document.getElementById("myNav").style.height = "100%";
-  }
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
 
-  function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
-  }
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
   </script>
 
 </body>

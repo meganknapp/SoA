@@ -13,7 +13,7 @@ h1 {
   font-weight: 700;
   font-style: normal;
   font-size: 80px;
-  color: #F0ECE1;
+  color: #E69840;
 }
 
 h2 {
@@ -66,14 +66,25 @@ a:active {
 /* ---------------------------------------------------
     NAV STYLE
 ----------------------------------------------------- */
+.logo {
+  background-color: red;
+  position: fixed;
+  top: 40px;
+  left: 46px;
+  padding: 8px;
+  width: 60px;
+  height: 45px;
+}
+
 .hamburger {
   position: fixed;
-  font-size: 40px;
-  top: 42px;
-  right: 50px;
+  top: 36px;
+  right: 46px;
+  font-size: 36px;
   padding: 8px;
   font-family: 'Playfair Display', serif;
-  color: #fff;
+  color: red;
+  cursor:pointer
 }
 .overlay {
   height: 0%;
@@ -83,7 +94,7 @@ a:active {
   top: 0;
   left: 0;
   background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,1);
+  background-color: rgba(0,0,0,.8);
   overflow-y: hidden;
   transition: 0.5s;
 }
@@ -116,16 +127,6 @@ a:active {
   font-size: 60px;
 }
 
-@media screen and (max-height: 450px) {
-  .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
-}
-
 /* ---------------------------------------------------
     LANDING STYLE
 ----------------------------------------------------- */
@@ -137,8 +138,155 @@ a:active {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .introText {
   top: 240px;
+}
+
+.mouse{
+  margin: 50px auto;
+  width: 100px;
+  position: absolute;
+  bottom: 60px;
+  left: calc(50% - 14px);
+}
+
+.mouse-icon{
+   width: 25px;
+   height: 45px;
+   border: 2px solid #F0ECE1;
+   border-radius: 15px;
+   cursor: pointer;
+   position: relative;
+   text-align: center;
+}
+
+.mouse-wheel{
+  height: 5px;
+  margin: 2px auto 0;
+  display: block;
+  width: 5px;
+  background-color: #F0ECE1;
+  border-radius: 50%;
+  -webkit-animation: 2s ease infinite wheel-up-down;
+  -moz-animation: 2s ease infinite wheel-up-down;
+  animation: 2s ease infinite wheel-up-down;
+  animation-delay: .3s;
+}
+
+@-webkit-keyframes wheel-up-down {
+	0% {
+	    margin-top: 2px;
+	    opacity: 0;
+	}
+	30% {
+	    opacity: 1;
+	}
+	100% {
+	    margin-top: 30px;
+	    opacity: 0;
+	}
+}
+
+@-moz-keyframes wheel-up-down {
+	0% {
+	    margin-top: 2px;
+	    opacity: 0;
+	}
+	30% {
+	    opacity: 1;
+	}
+	100% {
+	    margin-top: 30px;
+	    opacity: 0;
+	}
+}
+
+@keyframes wheel-up-down {
+	0% {
+	    margin-top: 2px;
+	    opacity: 0;
+	}
+	30% {
+	    opacity: 1;
+	}
+	100% {
+	    margin-top: 30px;
+	    opacity: 0;
+	}
+}
+
+.topLine {
+  width: 1px;
+  position: absolute;
+  background-color: #F0ECE1;
+  height: 80px;
+  bottom: 0;
+  left: calc(50% - 2.5px);
+}
+
+.bottomLine {
+  width: 1px;
+  position: absolute;
+  background-color: #000;
+  height: 80px;
+  top: 100vh;
+  left: calc(50% - 2.5px);
+}
+
+.info {
+  padding: 200px 0px;
+}
+
+.definition{
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  margin: 0;
+  line-height: 1;
+}
+
+.phonics {
+  font-style: normal;
+  font-size: 20px;
+  color: #737373;
+  margin: 0;
+}
+
+/* ---------------------------------------------------
+    BLACK LOCUST STYLE
+----------------------------------------------------- */
+
+.communityName {
+  position: absolute;
+  font-size:80px;
+}
+
+.firstContentBlock {
+  padding-top: 170px;
+}
+
+.introParagraph {
+  margin-top: 180px;
+}
+
+.standardRow {
+  positon:relative;
+}
+
+/* ---------------------------------------------------
+    MEDIA QUEUES
+----------------------------------------------------- */
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
 }

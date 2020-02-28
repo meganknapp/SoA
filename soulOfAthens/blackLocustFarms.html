@@ -2,21 +2,19 @@
 <html lang="en">
 
 <head>
-  <title>Black Locust Farms | Soul of Athens</title>
+  <title>PROJECT NAME | Soul of Athens</title>
   <meta charset="UTF-8">
   <meta name="description" content="Intentional Living Communities">
   <meta name="keywords" content="Soul of Athens, Intentional Living, Intentional Communities">
-  <meta name="author" content="Megan Knapp, Nicole Dinan, Ryan Valette, Ally Herrera, Herbert Frimpong">
+  <meta name="author" content="Megan Knapp">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Bootstrap Stylesheet -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Reveal Stylesheet -->
+  <!-- <link rel="stylesheet" href="assets/css/reveal.css"> -->
   <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="assets/css/style.css">
-  <!-- Scrollbar Custom CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-  <!-- AOS Library -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/altstyle.css">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,700&display=swap" rel="stylesheet">
   <!-- FontAwesome -->
@@ -26,51 +24,30 @@
 
 <body>
 
-  <!-- Sidebar  -->
-  <nav id="sidebar">
-    <div id="dismiss">
-      <i class="fas fa-arrow-left"></i>
-    </div> <!-- close dismiss -->
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#">Black Locust Farms</a>
+      <a href="#">Currents</a>
+      <a href="#">Subamah</a>
+    </div>
+  </div>
 
-    <ul class="list-unstyled components">
-      <li>
-        <a href="index.html">Home</a>
-      </li>
-      <li>
-        <a href="blackLocustFarms.html">Black Locust Farms</a>
-      </li>
-      <li>
-        <a href="#">Currents</a>
-      </li>
-      <li>
-        <a href="#">Subamah</a>
-      </li>
-    </ul> <!-- close list-unstyled components -->
-  </nav> <!-- close nav -->
+  <span class="hamburger" onclick="openNav()">&#9776;</span>
 
-  <!-- Toggle Button  -->
-  <nav>
-    <div class="container-fluid">
-      <button type="button" id="sidebarCollapse" class="btn btn-info">
-        <i class="fas fa-align-left"></i>
-        <span>Menu</span>
-      </button>
-    </div> <!-- close container-fluid -->
-  </nav> <!-- close nav -->
-
-  <div class="overlay"></div>
+  <div class="logo"></div>
 
   <!-- Page Content  -->
 
   <h1 class="communityName pageWrap">Black Locust<br>Farms</h1>
 
-  <div class="container-fluid pageWrap ">
+  <div class="container">
     <div class="firstContentBlock row ">
       <div class="col-sm-12 col-md-6 introParagraph">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam. Ut enim ad minim veniam.</p>
       </div>
 
-      <div class="col-sm-12 col-md-6" data-aos="fade-left">
+      <div class="col-sm-12 col-md-6">
         <img src="https://images.pexels.com/photos/2954928/pexels-photo-2954928.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="100%">
         <p class="pcut">Photocaption<br><i>Photographer</i></p>
       </div>
@@ -78,7 +55,7 @@
 
     <div class="standardRow row">
       <div class="col-sm-12 col-md-6 ">
-        <img src="assets/img/wheat.png" width="100%" data-aos="fade-right">
+        <img src="assets/img/wheat.png" width="100%">
         <p class="pcut">Photocaption<br><i>Photographer</i></p>
       </div>
 
@@ -97,37 +74,24 @@
   <!-- Bootstrap JS -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
   </script>
-  <!-- jQuery Custom Scroller CDN -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js">
-  </script>
-  <!-- AOS library -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-   <script>
-     AOS.init();
-   </script>
+
+  <!-- Reveal.js -->
+  <!-- <script src="assets/js/reveal.js"></script>
+  <script>
+    Reveal.initialize();
+  </script> -->
 
   <!-- Sidebar -->
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $("#sidebar").mCustomScrollbar({
-        theme: "minimal"
-      });
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
 
-      $('#dismiss, .overlay').on('click', function() {
-        $('#sidebar').removeClass('active');
-        $('.overlay').removeClass('active');
-      });
-
-      $('#sidebarCollapse').on('click', function() {
-        $('#sidebar').addClass('active');
-        $('.overlay').addClass('active');
-        $('.collapse.in').toggleClass('in');
-        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-      });
-    });
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
   </script>
 
-
-  </body>
+</body>
 
 </html>
