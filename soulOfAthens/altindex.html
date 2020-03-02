@@ -78,8 +78,12 @@
     
   </div> <!-- close container -->
 
-
-  <!-- REACT <iframe>
+<!-- THESE ARE BOOTSTRAP STYLES FOR EMBEDDING IFRAMES, ETC. Can be found on bootstrap documentation--->
+<!-- Note: style the slideshow through that html file/css... in this case, altindex-ss.html -->
+<!-- Style how that html file is embedded in this document... so how many columns, etc. -->
+<div class="embed-responsive embed-responsive-16by9">
+<iframe src="altindex-ss.html">
+    <!-- PUT THIS INTO SEPARATE HTML FILE 
       <div class="reveal">
         <div class="slides">
           <section>Black Locust Farms</section>
@@ -87,7 +91,10 @@
           <section>Subamah</section>
         </div>
       </div>
-    </iframe> -->
+        -->
+    <!------- INSTEAD, LINK THE SOURCE OF THE HTML/REVEAL SLIDESHOW ------->
+    </iframe>
+        </div> <!-- close .embed-responsive -->
 
 
 
@@ -102,7 +109,8 @@
   </script>
 
   <!-- Reveal.js -->
-  <!-- <script src="assets/js/reveal.js"></script>
+        <!-- --- THIS GOES IN SAME SEPARATE HTML FILE AS WHAT YOU'RE BUILDING THE SLIDESHOW IN
+<script src="assets/js/reveal.js"></script>
   <script>
     Reveal.initialize();
   </script> -->
