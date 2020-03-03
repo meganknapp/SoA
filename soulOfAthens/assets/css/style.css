@@ -74,6 +74,7 @@ a:active {
   padding: 8px;
   width: 60px;
   height: 45px;
+  z-index: 100;
 }
 
 .hamburger {
@@ -84,8 +85,10 @@ a:active {
   padding: 8px;
   font-family: 'Playfair Display', serif;
   color: red;
-  cursor:pointer
+  cursor:pointer;
+  z-index: 100;
 }
+
 .overlay {
   height: 0%;
   width: 100%;
