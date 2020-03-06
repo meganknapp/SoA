@@ -1,7 +1,6 @@
 /* ---------------------------------------------------
     UNIVERSAL STYLES
 ----------------------------------------------------- */
-
 body {
   background-color: #F0ECE1;
   color: #000;
@@ -85,7 +84,7 @@ a:active {
   padding: 8px;
   font-family: 'Playfair Display', serif;
   color: red;
-  cursor:pointer;
+  cursor: pointer;
   z-index: 100;
 }
 
@@ -96,8 +95,8 @@ a:active {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,.8);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, .8);
   overflow-y: hidden;
   transition: 0.5s;
   z-index: 200;
@@ -137,7 +136,6 @@ a:active {
 /* ---------------------------------------------------
     LANDING STYLE
 ----------------------------------------------------- */
-
 .landing {
   height: 100vh;
   min-height: 500px;
@@ -152,7 +150,7 @@ a:active {
   top: 240px;
 }
 
-.mouse{
+.mouse {
   margin: 50px auto;
   width: 100px;
   position: absolute;
@@ -160,17 +158,17 @@ a:active {
   left: calc(50% - 14px);
 }
 
-.mouse-icon{
-   width: 25px;
-   height: 45px;
-   border: 2px solid #F0ECE1;
-   border-radius: 15px;
-   cursor: pointer;
-   position: relative;
-   text-align: center;
+.mouse-icon {
+  width: 25px;
+  height: 45px;
+  border: 2px solid #F0ECE1;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
 }
 
-.mouse-wheel{
+.mouse-wheel {
   height: 5px;
   margin: 2px auto 0;
   display: block;
@@ -184,45 +182,51 @@ a:active {
 }
 
 @-webkit-keyframes wheel-up-down {
-	0% {
-	    margin-top: 2px;
-	    opacity: 0;
-	}
-	30% {
-	    opacity: 1;
-	}
-	100% {
-	    margin-top: 30px;
-	    opacity: 0;
-	}
+  0% {
+    margin-top: 2px;
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  100% {
+    margin-top: 30px;
+    opacity: 0;
+  }
 }
 
 @-moz-keyframes wheel-up-down {
-	0% {
-	    margin-top: 2px;
-	    opacity: 0;
-	}
-	30% {
-	    opacity: 1;
-	}
-	100% {
-	    margin-top: 30px;
-	    opacity: 0;
-	}
+  0% {
+    margin-top: 2px;
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  100% {
+    margin-top: 30px;
+    opacity: 0;
+  }
 }
 
 @keyframes wheel-up-down {
-	0% {
-	    margin-top: 2px;
-	    opacity: 0;
-	}
-	30% {
-	    opacity: 1;
-	}
-	100% {
-	    margin-top: 30px;
-	    opacity: 0;
-	}
+  0% {
+    margin-top: 2px;
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  100% {
+    margin-top: 30px;
+    opacity: 0;
+  }
 }
 
 .topLine {
@@ -247,7 +251,7 @@ a:active {
   padding: 200px 0px;
 }
 
-.definition{
+.definition {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-style: normal;
@@ -263,13 +267,69 @@ a:active {
   margin: 0;
 }
 
+.definitionText {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.audio {
+  margin: 60px 0px;
+}
+
+.audioText {
+  width: 280px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.bar {
+  background-color: #F0ECE1;
+  width: 120px;
+  height: 6px;
+}
+
+#map {
+  background-color: #59604F;
+}
+
+.map {
+  color: #F0ECE1;
+  padding: 80px;
+}
+
+.timeline {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  color: #F0ECE1;
+  text-transform: uppercase;
+}
+
+.slideHeading {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 80px;
+  color: #F0ECE1;
+}
+
+.about {
+  font-family: 'Lato', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #F0ECE1;
+}
+
+
+
 /* ---------------------------------------------------
     BLACK LOCUST STYLE
 ----------------------------------------------------- */
-
 .communityName {
   position: absolute;
-  font-size:80px;
+  font-size: 80px;
 }
 
 .firstContentBlock {
@@ -281,19 +341,24 @@ a:active {
 }
 
 .standardRow {
-  positon:relative;
+  positon: relative;
 }
 
 /* ---------------------------------------------------
     MEDIA QUEUES
 ----------------------------------------------------- */
-
 @media screen and (max-height: 450px) {
-  .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
+  .overlay {
+    overflow-y: auto;
+  }
+
+  .overlay a {
+    font-size: 20px
+  }
+
   .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
 }

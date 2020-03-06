@@ -24,66 +24,97 @@
 
 <body>
 
+  <section id="navigation">
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="#">Black Locust Farms</a>
+        <a href="#">Currents</a>
+        <a href="#">Subamah</a>
+      </div> <!-- close overlay-content -->
+    </div> <!-- close myNav -->
+    <span class="hamburger" onclick="openNav()">&#9776;</span> <!-- close hamburger -->
+    <div class="logo"></div> <!-- close logo -->
+  </section> <!-- close navigation -->
 
-  <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="overlay-content">
-      <a href="#">Black Locust Farms</a>
-      <a href="#">Currents</a>
-      <a href="#">Subamah</a>
-    </div> <!-- close overlay-content -->
-  </div> <!-- close myNav -->
+  <section id="landingImg">
+    <div class="container-fluid landing">
+      <div class="row">
+        <div class="col-sm-12 text-center introText">
+          <h1>Intentional<br>Communities<h1>
+        </div> <!-- close introText -->
+        <a href="#" class="scrollDown">
+          <div class="mouse">
+            <div class="mouse-icon">
+              <span class="mouse-wheel"></span>
+            </div> <!-- close mouse-icon -->
+          </div> <!-- close mouse -->
+        </a> <!-- close a scrollDown -->
+      </div> <!-- close row -->
+      <div class="topLine"></div>
+      <div class="bottomLine"></div>
+    </div> <!-- close container-fluid/landing -->
+  </section> <!-- close landingImg -->
 
-  <span class="hamburger" onclick="openNav()">&#9776;</span>
 
-  <div class="logo"></div>
 
-  <div class="container-fluid landing">
-    <div class="row">
-      <div class="col-sm-12 text-center introText">
-        <h1>Intentional<br>Communities<h1>
-      </div> <!-- close introText -->
-      <a href="#" class="scrollDown">
-        <div class="mouse">
-          <div class="mouse-icon">
-            <span class="mouse-wheel"></span>
-          </div> <!-- close mouse-icon -->
-        </div> <!-- close mouse -->
-      </a>
-    </div> <!-- close row -->
-    <div class="topLine"></div>
-  </div> <!-- close container-fluid/landing -->
+  <section id="definition">
+    <div class="container info">
 
-  <div class="container info">
-    <div class="bottomLine"></div>
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 text-center">
+          <p class="definition text-left">in·ten·tion·al com·mu·ni·ty</p>
+          <p class="phonics text-right"><b>noun</b>/ inˈten(t)SH(ə)n(ə)l kəˈmyo͞onədē/</p>
+        </div>
+        <div class="col-sm-2"></div>
+      </div> <!-- close row -->
 
-    <div class="row">
-      <div class="col-sm-2"></div>
-      <div class="col-sm-8 text-center">
-        <p class="definition text-left">in·ten·tion·al com·mu·ni·ty</p>
-        <p class="phonics text-right"><b>noun</b>/ inˈten(t)SH(ə)n(ə)l kəˈmyo͞onədē/</p>
-      </div>
-      <div class="col-sm-2"></div>
-    </div> <!-- close row -->
+      <div class="row">
+        <div class="col-sm-12 text-left">
+          <p class="definitionText">A group of people who live together or share common facilities and who regularly associate with each other on the basis of explicit common values. Source: ic.org</p>
+        </div>
+      </div> <!-- close row -->
 
-    <div class="row">
-      <div class="col-sm-3"></div>
-      <div class="col-sm-6 text-center">
-        <p>A group of people who live together or share common facilities and who regularly associate with each other on the basis of explicit common values. Source: ic.org</p>
-        <p>Plunder weigh anchor loaded to the gunwalls scourge of the seven seas Yellow Jack cutlass six pounders Arr clap of thunder topmast. Fire in the hole gibbet coxswain square-rigged cable Barbary Coast heave down capstan scuttle ballast. Hands bounty no prey, no pay loot six pounders broadside crack Jennys tea cup gun poop deck aye.</p>
-        <p>Scroll to explore three commmunities.</p>
-      </div>
-      <div class="col-sm-3"></div>
-    </div> <!-- close row -->
+      <div class="row">
+        <div class="audio col-sm-12 text-center">
+          <p class="audioText">Listen to how members of intentional communities describe what their community means to them.<p>
+              <div class="audioPlay">
+                <audio controls>
+                  <source src="assets/audio/audio.mp4" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div> <!-- close audioPlay -->
+        </div> <!-- close col-sm-12 text-center -->
+      </div> <!-- close row -->
 
-  </div> <!-- close container -->
+    </div> <!-- close container -->
+  </section> <!-- close definition -->
 
-<!-- THESE ARE BOOTSTRAP STYLES FOR EMBEDDING IFRAMES, ETC. Can be found on bootstrap documentation--->
-<!-- Note: style the slideshow through that html file/css... in this case, index-ss.html -->
-<!-- Style how that html file is embedded in this document... so how many columns, etc. -->
-<div class="embed-responsive embed-responsive-16by9">
-<iframe src="index-ss.html">
-    <!-- PUT THIS INTO SEPARATE HTML FILE
+  <section id="map">
+    <div class="container map">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 text-left">
+          <img src="https://via.placeholder.com/300" style="width: 100%;">
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <div class="bar"></div>
+          <br>
+          <p>Science tells us that human beings are, by nature, cooperative. Experience tells us that living together can be complicated. </p>
+          <p>As humans have evolved, so has our need for community.  Banding together has helped our species survive. Regardless of its name- commune, moshav, eco-village, kibbutz, co-housing or  intentional community- outsiders generally view alternative living situations with suspicion or misunderstanding. </p>
+          <p>In Athens, a progressive college town in the rural hills of S.E. Ohio, the tradition of creating community continues to thrive. Whether drawn together by ideology or pragmatism, the practice of strangers living together in intentional communities’ flourishes in many rural and semi-rural spaces. There is a symbiotic relationship between the needs and makeup of local towns and the skills of the community members. </p>
+          <p>We’ve focused on three intentional communities that illustrate how these alternative societies begin, the challenges they face, how they can flourish, and how they sometimes cease to exist. </p>
+        </div> <!-- close col-sm-12 col-md-6 -->
+      </div> <!-- close row -->
+    </div> <!-- close container map -->
+  </section> <!-- close map -->
+
+  <!-- THESE ARE BOOTSTRAP STYLES FOR EMBEDDING IFRAMES, ETC. Can be found on bootstrap documentation--->
+  <!-- Note: style the slideshow through that html file/css... in this case, index-ss.html -->
+  <!-- Style how that html file is embedded in this document... so how many columns, etc. -->
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe src="index-ss.html">
+      <!-- PUT THIS INTO SEPARATE HTML FILE
       <div class="reveal">
         <div class="slides">
           <section>Black Locust Farms</section>
@@ -92,9 +123,9 @@
         </div>
       </div>
         -->
-    <!------- INSTEAD, LINK THE SOURCE OF THE HTML/REVEAL SLIDESHOW ------->
+      <!------- INSTEAD, LINK THE SOURCE OF THE HTML/REVEAL SLIDESHOW ------->
     </iframe>
-        </div> <!-- close .embed-responsive -->
+  </div> <!-- close .embed-responsive -->
 
 
 
@@ -109,7 +140,7 @@
   </script>
 
   <!-- Reveal.js -->
-        <!-- --- THIS GOES IN SAME SEPARATE HTML FILE AS WHAT YOU'RE BUILDING THE SLIDESHOW IN
+  <!-- --- THIS GOES IN SAME SEPARATE HTML FILE AS WHAT YOU'RE BUILDING THE SLIDESHOW IN
 <script src="assets/js/reveal.js"></script>
   <script>
     Reveal.initialize();
