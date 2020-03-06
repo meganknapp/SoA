@@ -37,11 +37,18 @@
     <div class="logo"></div> <!-- close logo -->
   </section> <!-- close navigation -->
 
-  <section id="landingImg">
+  <section id="landingVid">
+
+    <div class="video">
+      <video autoplay muted loop id="myVideo">
+        <source src="assets/video/goats.mp4" type="video/mp4">
+      </video>
+    </div>
+
     <div class="container-fluid landing">
       <div class="row">
         <div class="col-sm-12 text-center introText">
-          <h1>Intentional<br>Communities<h1>
+          <h1>Intentional<br>Communities</h1>
         </div> <!-- close introText -->
         <a href="#" class="scrollDown">
           <div class="mouse">
@@ -54,14 +61,14 @@
       <div class="topLine"></div>
       <div class="bottomLine"></div>
     </div> <!-- close container-fluid/landing -->
-  </section> <!-- close landingImg -->
+  </section> <!-- close landingVid -->
 
 
 
   <section id="definition">
     <div class="container info">
 
-      <div class="row">
+      <div class="row hideme">
         <div class="col-sm-2"></div>
         <div class="col-sm-8 text-center">
           <p class="definition text-left">in·ten·tion·al com·mu·ni·ty</p>
@@ -70,22 +77,19 @@
         <div class="col-sm-2"></div>
       </div> <!-- close row -->
 
-      <div class="row">
-        <div class="col-sm-12 text-left">
-          <p class="definitionText">A group of people who live together or share common facilities and who regularly associate with each other on the basis of explicit common values. Source: ic.org</p>
-        </div>
-      </div> <!-- close row -->
-
-      <div class="row">
-        <div class="audio col-sm-12 text-center">
-          <p class="audioText">Listen to how members of intentional communities describe what their community means to them.<p>
-              <div class="audioPlay">
+      <div class="row hideme">
+        <div class="col-sm-12 text-center">
+          <p class="definitionText">A group of people who live together or share common facilities and who regularly associate with each other on the basis of explicit common values.</p>
+          <br>
+          <p class="definitionText text-center">Listen to how members of intentional communities describe what their community means to them.<p>
+            <br>
+              <div class="audioPlay text-center">
                 <audio controls>
                   <source src="assets/audio/audio.mp4" type="audio/mpeg">
                   Your browser does not support the audio element.
                 </audio>
               </div> <!-- close audioPlay -->
-        </div> <!-- close col-sm-12 text-center -->
+        </div>
       </div> <!-- close row -->
 
     </div> <!-- close container -->
@@ -156,6 +160,7 @@
       document.getElementById("myNav").style.height = "0%";
     }
   </script>
+
 
 </body>
 
