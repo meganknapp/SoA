@@ -1,8 +1,9 @@
 /* ---------------------------------------------------
     UNIVERSAL STYLES
 ----------------------------------------------------- */
+
 body {
-  background-color: #D6D0C6;
+  background-color: #F0ECE1;
   color: #000;
   font-family: 'Open Sans', sans-serif;
 }
@@ -12,21 +13,19 @@ h1 {
   font-weight: 700;
   font-style: normal;
   font-size: 80px;
-  color: #D6D0C6;
+  color: #F0ECE1;
 }
 
 h2 {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 60px;
 }
 
 h3 {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 24 px;
 }
 
 a:link {
@@ -64,63 +63,17 @@ a:active {
   padding-top: 5px;
 }
 
-.reveal .controls .navigate-left, .reveal .controls .navigate-right {
-    color: #F0ECE1;
-}
-
-.logo {
-    animation: fadeInAnimation ease 1.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-delay: .2s;
-}
-
-.hamburger {
-    animation: fadeInAnimation ease 1.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-delay: .4s;
-}
-
-.introText {
-    animation: fadeInAnimation ease 1.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-delay: .8s;
-}
-
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
-}
-
-@-webkit-keyframes @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
-}
-
-
 /* ---------------------------------------------------
     NAV STYLE
 ----------------------------------------------------- */
 .logo {
-  background-color: black;
+  background-color: red;
   position: fixed;
   top: 40px;
   left: 46px;
   padding: 8px;
   width: 60px;
   height: 45px;
-  z-index: 300;
-  opacity: 0;
 }
 
 .hamburger {
@@ -129,11 +82,9 @@ a:active {
   right: 46px;
   font-size: 36px;
   padding: 8px;
-  color: black;
-  cursor: pointer;
-  z-index: 100;
-  opacity: 0;
-
+  font-family: 'Playfair Display', serif;
+  color: red;
+  cursor: pointer
 }
 
 .overlay {
@@ -143,10 +94,10 @@ a:active {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #2C3415;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, .8);
   overflow-y: hidden;
   transition: 0.5s;
-  z-index: 200;
 }
 
 .overlay-content {
@@ -155,26 +106,20 @@ a:active {
   width: 100%;
   text-align: center;
   margin-top: 30px;
-  z-index: 200;
-  font-family: 'Playfair Display', serif;
-  font-style: normal;
-
-  color: #000;
 }
 
 .overlay a {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color:#000;
-  font-weight: 700;
+  color: #818181;
   display: block;
   transition: 0.3s;
-  z-index: 200;
 }
 
-.overlay a:hover, .overlay a:focus {
-  color: #000;
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
 }
 
 .overlay .closebtn {
@@ -182,34 +127,24 @@ a:active {
   top: 20px;
   right: 45px;
   font-size: 60px;
-  z-index: 200;
 }
 
 /* ---------------------------------------------------
     LANDING STYLE
 ----------------------------------------------------- */
 
-#landingVid {
+.landing {
   height: 100vh;
   min-height: 500px;
-}
-
-.video video{
-    min-width: 100%;
-    position: fixed;
-    top:0;
-    z-index: -999;
-}
-
-#definition {
-  background-color: #D6D0C6;
+  background-image: url('https://s3.wp.wsu.edu/uploads/sites/609/2019/02/wheat-1188x792-1188x792.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .introText {
   top: 240px;
-  position: absolute;
-  opacity: 0;
-
 }
 
 .mouse {
@@ -223,7 +158,7 @@ a:active {
 .mouse-icon {
   width: 25px;
   height: 45px;
-  border: 2px solid #D6D0C6;
+  border: 2px solid #F0ECE1;
   border-radius: 15px;
   cursor: pointer;
   position: relative;
@@ -235,7 +170,7 @@ a:active {
   margin: 2px auto 0;
   display: block;
   width: 5px;
-  background-color: #D6D0C6;
+  background-color: #F0ECE1;
   border-radius: 50%;
   -webkit-animation: 2s ease infinite wheel-up-down;
   -moz-animation: 2s ease infinite wheel-up-down;
@@ -294,7 +229,7 @@ a:active {
 .topLine {
   width: 1px;
   position: absolute;
-  background-color: #D6D0C6;
+  background-color: #F0ECE1;
   height: 80px;
   bottom: 0;
   left: calc(50% - 2.5px);
@@ -329,67 +264,14 @@ a:active {
   margin: 0;
 }
 
-.definitionText {
-  width: 600px;
-  margin: 0 auto;
-}
-
-.audio {
-  margin-top:60px;
-}
-
-.bar {
-  background-color: #D6D0C6;
-  width: 120px;
-  height: 6px;
-}
-
-#map {
-  background-color: #2C3415;
-}
-
-.map {
-  color: #D6D0C6;
-  padding: 80px;
-}
-
-.timeline {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 16px;
-  color: #F0ECE1;
-  text-transform: uppercase;
-}
-
-.slideHeading {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 80px;
-  color: #F0ECE1;
-}
-
-.about {
-  font-family: 'Lato', serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  color: #F0ECE1;
-}
-
-
-
 /* ---------------------------------------------------
     BLACK LOCUST STYLE
 ----------------------------------------------------- */
+
 .communityName {
   position: absolute;
-  font-size: 108px;
-  text-transform: uppercase;
-  color: #2C3415;
-  top: 81px;
-  z-index: 10;
+  font-size: 80px;
+  color: #CA4A41;
 }
 
 .firstContentBlock {
@@ -407,13 +289,14 @@ a:active {
 .jumbotron {
   border-radius: 0px;
   background:
-    linear-gradient(rgba(107, 93, 72, 0.15),
-      rgba(60, 53, 34, 0.85)),
-    url("../img/fireBlackLocust.jpg");
+    linear-gradient(rgba(161, 165, 142, 0.15),
+      rgba(73, 82, 43, 0.85)),
+    url("https://i.imgur.com/fW4QRXt.jpg");
   background-repeat: no-repeat;
+  /*Comment out attachment to stop parralex */
   background-attachment: fixed;
   background-size: cover;
-  color: #D6D0C6 !important;
+  color: white !important;
   height: 650px;
 }
 
@@ -421,27 +304,11 @@ a:active {
   text-align: left;
 }
 
-.leftImg {
-padding-top: 60px;
-}
-
-.centerImg {
-  position: absolute;
-  width: 500px;
-  margin: 0 auto;
-  left: 350px;
-  z-index: 10;
-  padding-top: 350px;
-}
-
-.rightImg {
-
-}
-
 .communityfooter {
   width: 100%;
   background-color: #CA4A41;
   align-content: center;
+
 }
 
 .communityfootertext {
@@ -459,9 +326,13 @@ padding-top: 60px;
   float: center;
 }
 
+
+
+
 /* ---------------------------------------------------
     MEDIA QUEUES
 ----------------------------------------------------- */
+
 @media screen and (max-height: 450px) {
   .overlay {
     overflow-y: auto;
