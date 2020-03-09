@@ -438,27 +438,32 @@ padding-top: 60px;
 
 }
 
-.communityFooter {
+.nextCommunity {
   width: 100%;
-  background-color: #CA4A41;
-  align-content: center;
+  background-color: #6B5D48;
+  color: #D6D0C6;
+  padding:30px;
 }
 
 .communityFooterText {
-  text-align: center;
-  color: white;
-  font-size: 18px;
+
 }
 
-.footerBtn {
-  text-align: center;
-  align: center;
+.btn {
+  background-color: #CC8126;
+  color: #D6D0C6 !important;
+  text-transform: uppercase;
+  padding: 10px;
 }
 
-.footerButtons {
-  float: center;
+ a .btn{
+  color: #D6D0C6 !important;
 }
 
+footer {
+  background-color: #3D3522;
+  color: #D6D0C6 !important;
+}
 /* ---------------------------------------------------
     MEDIA QUEUES
 ----------------------------------------------------- */
