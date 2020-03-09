@@ -49,10 +49,6 @@ a:active {
   text-decoration: none;
 }
 
-.btn {
-  color: #000;
-}
-
 .row {
   padding-bottom: 40px;
 }
@@ -64,47 +60,36 @@ a:active {
   padding-top: 5px;
 }
 
-.reveal .controls .navigate-left, .reveal .controls .navigate-right {
-    color: #F0ECE1;
+.btn {
+  background-color: #CC8126;
+  color: #D6D0C6 !important;
+  text-transform: uppercase;
+  padding: 10px;
+  border: 1px solid #D6D0C6;
 }
 
-.logo {
-    animation: fadeInAnimation ease 1.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-delay: .2s;
+.btn:hover {
+  background-color: #E8C090;
+  color: #2C3415 !important;
+  border: 1px solid #2C3415;
 }
 
-.hamburger {
-    animation: fadeInAnimation ease 1.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-delay: .4s;
+footer {
+  background-color: #3D3522;
+  color: #D6D0C6;
+  font-size: 12px;
 }
 
-.introText {
-    animation: fadeInAnimation ease 1.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-delay: .8s;
+footer a  {
+  color: #D6D0C6 !important;
 }
 
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
+footer a:hover {
+  color: #CC8126 !important;
 }
 
-@-webkit-keyframes @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
+footer p {
+  margin-bottom:8px;
 }
 
 
@@ -120,7 +105,6 @@ a:active {
   width: 60px;
   height: 45px;
   z-index: 300;
-  opacity: 0;
 }
 
 .hamburger {
@@ -132,8 +116,6 @@ a:active {
   color: black;
   cursor: pointer;
   z-index: 100;
-  opacity: 0;
-
 }
 
 .overlay {
@@ -208,8 +190,6 @@ a:active {
 .introText {
   top: 240px;
   position: absolute;
-  opacity: 0;
-
 }
 
 .mouse {
@@ -378,10 +358,12 @@ a:active {
   color: #F0ECE1;
 }
 
-
+.reveal .controls .navigate-left, .reveal .controls .navigate-right {
+    color: #F0ECE1;
+}
 
 /* ---------------------------------------------------
-    BLACK LOCUST STYLE
+    COMMUNITY PAGE STYLES
 ----------------------------------------------------- */
 .communityName {
   position: absolute;
@@ -449,21 +431,7 @@ padding-top: 60px;
 
 }
 
-.btn {
-  background-color: #CC8126;
-  color: #D6D0C6 !important;
-  text-transform: uppercase;
-  padding: 10px;
-}
 
- a .btn{
-  color: #D6D0C6 !important;
-}
-
-footer {
-  background-color: #3D3522;
-  color: #D6D0C6 !important;
-}
 /* ---------------------------------------------------
     MEDIA QUEUES
 ----------------------------------------------------- */
