@@ -417,7 +417,7 @@ a:active {
   height: 650px;
 }
 
-.jumbotrontext {
+.jumbotronText {
   text-align: left;
 }
 
@@ -438,24 +438,24 @@ padding-top: 60px;
 
 }
 
-.communityfooter {
+.communityFooter {
   width: 100%;
   background-color: #CA4A41;
   align-content: center;
 }
 
-.communityfootertext {
+.communityFooterText {
   text-align: center;
   color: white;
   font-size: 18px;
 }
 
-.footerbtn {
+.footerBtn {
   text-align: center;
   align: center;
 }
 
-.footerbuttons {
+.footerButtons {
   float: center;
 }
 
