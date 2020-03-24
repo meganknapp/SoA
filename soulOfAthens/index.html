@@ -95,23 +95,34 @@
     </div> <!-- close container -->
   </section> <!-- close definition -->
 
-  <section id="map">
-    <div class="container map">
-      <div class="row">
-        <div class="col-sm-12 col-md-6 text-left">
-          <img src="https://via.placeholder.com/300" style="width: 100%;">
-        </div>
-        <div class="col-sm-12 col-md-6">
-          <div class="bar"></div>
-          <br>
-          <p>Science tells us that human beings are, by nature, cooperative. Experience tells us that living together can be complicated. </p>
-          <p>As humans have evolved, so has our need for community.  Banding together has helped our species survive. Regardless of its name- commune, moshav, eco-village, kibbutz, co-housing or  intentional community- outsiders generally view alternative living situations with suspicion or misunderstanding. </p>
-          <p>In Athens, a progressive college town in the rural hills of S.E. Ohio, the tradition of creating community continues to thrive. Whether drawn together by ideology or pragmatism, the practice of strangers living together in intentional communities’ flourishes in many rural and semi-rural spaces. There is a symbiotic relationship between the needs and makeup of local towns and the skills of the community members. </p>
-          <p>We’ve focused on three intentional communities that illustrate how these alternative societies begin, the challenges they face, how they can flourish, and how they sometimes cease to exist. </p>
-        </div> <!-- close col-sm-12 col-md-6 -->
-      </div> <!-- close row -->
-    </div> <!-- close container map -->
-  </section> <!-- close map -->
+  <section id="maprow">
+      <div class="container maprow">
+        <div class="row">
+
+          <!-- Mapbox stuff -->
+          <div class="col-sm-12 col-md-6 text-left">
+            <div id="map"></div>
+          </div>
+          <!-- Close Mapbox stuff -->
+
+          <div class="col-sm-12 col-md-6">
+            <div class="bar"></div>
+            <br>
+            <p>Science tells us that human beings are, by nature, cooperative. Experience tells us that living together
+              can be complicated. </p>
+            <p>As humans have evolved, so has our need for community. Banding together has helped our species survive.
+              Regardless of its name- commune, moshav, eco-village, kibbutz, co-housing or intentional community-
+              outsiders generally view alternative living situations with suspicion or misunderstanding. </p>
+            <p>In Athens, a progressive college town in the rural hills of S.E. Ohio, the tradition of creating community
+              continues to thrive. Whether drawn together by ideology or pragmatism, the practice of strangers living
+              together in intentional communities’ flourishes in many rural and semi-rural spaces. There is a symbiotic
+              relationship between the needs and makeup of local towns and the skills of the community members. </p>
+            <p>We’ve focused on three intentional communities that illustrate how these alternative societies begin, the
+              challenges they face, how they can flourish, and how they sometimes cease to exist. </p>
+          </div> <!-- close col-sm-12 col-md-6 -->
+        </div> <!-- close row -->
+      </div> <!-- close container map -->
+    </section> <!-- close map -->
 
   <!-- THESE ARE BOOTSTRAP STYLES FOR EMBEDDING IFRAMES, ETC. Can be found on bootstrap documentation--->
   <!-- Note: style the slideshow through that html file/css... in this case, index-ss.html -->
@@ -144,11 +155,6 @@
   </script>
 
   <!-- Reveal.js -->
-  <!-- --- THIS GOES IN SAME SEPARATE HTML FILE AS WHAT YOU'RE BUILDING THE SLIDESHOW IN
-<script src="assets/js/reveal.js"></script>
-  <script>
-    Reveal.initialize();
-  </script> -->
 
   <!-- Sidebar -->
   <script>
@@ -160,6 +166,108 @@
       document.getElementById("myNav").style.height = "0%";
     }
   </script>
+
+  <!-- MAPBOX SCRIPTS BELLOW -->
+  <script>
+    mapboxgl.accessToken =
+      'pk.eyJ1Ijoicnlhbi12YWxsZXR0ZSIsImEiOiJjazZnbXN3ODkybDBjM21vYmQ1cGxiMjd5In0.VolIXH3LNtJjz9SgF_LpaQ';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/ryan-vallette/ck84rn06406fg1ip1gv42krzu',
+      center: [-82.0794, 39.3258],
+      zoom: 9.51,
+      hash: true,
+    });
+
+    map.on('load', function () {
+      map.addSource('places', {
+        'type': 'geojson',
+        'data': {
+          'type': 'FeatureCollection',
+          'features': [{
+              'type': 'Feature',
+              'properties': {
+                'description': '<strong class="mapheader">Black Locust</strong><p class="maptext">An XXX year old community founded on the principle of XXXXXX</p>',
+                'icon': 'theatre'
+
+              },
+              'geometry': {
+                'type': 'Point',
+                'coordinates': [-82.115800, 39.175340]
+              }
+            },
+            {
+              'type': 'Feature',
+              'properties': {
+                'description': '<strong class="mapheader">Currents</strong><p class="maptext">An XXX year old community founded on the principle of XXXXXX</p>',
+                'icon': 'theatre'
+              },
+              'geometry': {
+                'type': 'Point',
+                'coordinates': [-82.055090, 39.454510]
+              }
+            },
+            {
+              'type': 'Feature',
+              'properties': {
+                'description': '<strong class="mapheader">Subamuh</strong><p class="maptext">An XXX year old community founded on the principle of XXXXXX</p>',
+                'icon': 'bar'
+              },
+              'geometry': {
+                'type': 'Point',
+                'coordinates': [-82.031480, 39.420660]
+              }
+            }
+          ]
+        }
+      });
+
+      // Add a layer showing the places.
+      map.addLayer({
+        'id': 'places',
+        'type': 'symbol',
+        'source': 'places',
+        'layout': {
+          'icon-image': '{icon}-15',
+          'icon-allow-overlap': true
+        }
+      });
+
+      // Create a popup, but don't add it to the map yet.
+      var popup = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+      });
+
+      map.on('mouseenter', 'places', function (e) {
+        // Change the cursor style as a UI indicator.
+        map.getCanvas().style.cursor = 'pointer';
+
+        var coordinates = e.features[0].geometry.coordinates.slice();
+        var description = e.features[0].properties.description;
+
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+          coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+
+        // Populate the popup and set its coordinates
+        // based on the feature found.
+        popup
+          .setLngLat(coordinates)
+          .setHTML(description)
+          .addTo(map);
+      });
+
+      map.on('mouseleave', 'places', function () {
+        map.getCanvas().style.cursor = '';
+        popup.remove();
+      });
+    });
+  </script>
+  <!-- End mapbox scripps -->
 
 
 </body>
