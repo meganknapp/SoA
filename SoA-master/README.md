@@ -1,2 +1,0 @@
-# SoulofAthens
-Intentional Living Communities

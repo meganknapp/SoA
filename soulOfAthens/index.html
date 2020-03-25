@@ -10,7 +10,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Bootstrap Stylesheet -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!-- Reveal Stylesheet -->
   <!-- <link rel="stylesheet" href="assets/css/reveal.css"> -->
   <!-- Custom Stylesheet -->
@@ -18,8 +19,21 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,700&display=swap" rel="stylesheet">
   <!-- FontAwesome -->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+    integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous">
+  </script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+    integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">
+  </script>
+
+
+
+  <!-- Mapbox Stuff -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css" rel="stylesheet" />
+  <!-- Close MapBox -->
+
+
 </head>
 
 <body>
@@ -34,7 +48,9 @@
       </div> <!-- close overlay-content -->
     </div> <!-- close myNav -->
     <span class="hamburger" onclick="openNav()">&#9776;</span> <!-- close hamburger -->
-    <a href="index.html"><div class="logo"></div></a> <!-- close logo -->
+    <a href="index.html">
+      <div class="logo"></div>
+    </a> <!-- close logo -->
   </section> <!-- close navigation -->
 
   <section id="landingVid">
@@ -79,10 +95,12 @@
 
       <div class="row">
         <div class="col-sm-12 text-center">
-          <p class="definitionText">A group of people who live together or share common facilities and who regularly associate with each other on the basis of explicit common values.</p>
+          <p class="definitionText">A group of people who live together or share common facilities and who regularly
+            associate with each other on the basis of explicit common values.</p>
           <br>
-          <p class="definitionText text-center">Listen to how members of intentional communities describe what their community means to them.<p>
-            <br>
+          <p class="definitionText text-center">Listen to how members of intentional communities describe what their
+            community means to them.<p>
+              <br>
               <div class="audioPlay text-center">
                 <audio controls>
                   <source src="assets/audio/audio.mp4" type="audio/mpeg">
@@ -95,34 +113,38 @@
     </div> <!-- close container -->
   </section> <!-- close definition -->
 
+
+
+
+  <!-- The Id and class below I changed to maprow and updated the CSS -->
   <section id="maprow">
-      <div class="container maprow">
-        <div class="row">
+    <div class="container maprow">
+      <div class="row">
 
-          <!-- Mapbox stuff -->
-          <div class="col-sm-12 col-md-6 text-left">
-            <div id="map"></div>
-          </div>
-          <!-- Close Mapbox stuff -->
+        <!-- Mapbox stuff -->
+        <div class="col-sm-12 col-md-6 text-left">
+          <div id="map"></div>
+        </div>
+        <!-- Close Mapbox stuff -->
 
-          <div class="col-sm-12 col-md-6">
-            <div class="bar"></div>
-            <br>
-            <p>Science tells us that human beings are, by nature, cooperative. Experience tells us that living together
-              can be complicated. </p>
-            <p>As humans have evolved, so has our need for community. Banding together has helped our species survive.
-              Regardless of its name- commune, moshav, eco-village, kibbutz, co-housing or intentional community-
-              outsiders generally view alternative living situations with suspicion or misunderstanding. </p>
-            <p>In Athens, a progressive college town in the rural hills of S.E. Ohio, the tradition of creating community
-              continues to thrive. Whether drawn together by ideology or pragmatism, the practice of strangers living
-              together in intentional communities’ flourishes in many rural and semi-rural spaces. There is a symbiotic
-              relationship between the needs and makeup of local towns and the skills of the community members. </p>
-            <p>We’ve focused on three intentional communities that illustrate how these alternative societies begin, the
-              challenges they face, how they can flourish, and how they sometimes cease to exist. </p>
-          </div> <!-- close col-sm-12 col-md-6 -->
-        </div> <!-- close row -->
-      </div> <!-- close container map -->
-    </section> <!-- close map -->
+        <div class="col-sm-12 col-md-6">
+          <div class="bar"></div>
+          <br>
+          <p>Science tells us that human beings are, by nature, cooperative. Experience tells us that living together
+            can be complicated. </p>
+          <p>As humans have evolved, so has our need for community. Banding together has helped our species survive.
+            Regardless of its name- commune, moshav, eco-village, kibbutz, co-housing or intentional community-
+            outsiders generally view alternative living situations with suspicion or misunderstanding. </p>
+          <p>In Athens, a progressive college town in the rural hills of S.E. Ohio, the tradition of creating community
+            continues to thrive. Whether drawn together by ideology or pragmatism, the practice of strangers living
+            together in intentional communities’ flourishes in many rural and semi-rural spaces. There is a symbiotic
+            relationship between the needs and makeup of local towns and the skills of the community members. </p>
+          <p>We’ve focused on three intentional communities that illustrate how these alternative societies begin, the
+            challenges they face, how they can flourish, and how they sometimes cease to exist. </p>
+        </div> <!-- close col-sm-12 col-md-6 -->
+      </div> <!-- close row -->
+    </div> <!-- close container map -->
+  </section> <!-- close map -->
 
   <!-- THESE ARE BOOTSTRAP STYLES FOR EMBEDDING IFRAMES, ETC. Can be found on bootstrap documentation--->
   <!-- Note: style the slideshow through that html file/css... in this case, index-ss.html -->
@@ -145,27 +167,18 @@
 
 
   <!-- jQuery CDN - Slim version (=without AJAX) -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
   </script>
   <!-- Popper.JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
   </script>
   <!-- Bootstrap JS -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
   </script>
 
-  <!-- Reveal.js -->
-
-  <!-- Sidebar -->
-  <script>
-    function openNav() {
-      document.getElementById("myNav").style.height = "100%";
-    }
-
-    function closeNav() {
-      document.getElementById("myNav").style.height = "0%";
-    }
-  </script>
 
   <!-- MAPBOX SCRIPTS BELLOW -->
   <script>
@@ -268,6 +281,38 @@
     });
   </script>
   <!-- End mapbox scripps -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Reveal.js -->
+  <!-- --- THIS GOES IN SAME SEPARATE HTML FILE AS WHAT YOU'RE BUILDING THE SLIDESHOW IN
+<script src="assets/js/reveal.js"></script>
+  <script>
+    Reveal.initialize();
+  </script> -->
+
+  <!-- Sidebar -->
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+  </script>
 
 
 </body>

@@ -324,31 +324,13 @@ footer p {
   height: 6px;
 }
 
-/* ---------------------------------------------------
-    MAPBOX STYLES
------------------------------------------------------ */
-
-#map {
-  width: 100%;
-  height: 500px;
-
+#maprow {
+  background-color: #2C3415;
 }
 
-.mapboxgl-popup {
-  max-width: 400px;
-  /* background-color: #CA4A41; */
-}
-
-.mapheader {
-  color: #2C3415;
-  font-family: 'Playfair Display', serif;
-  font-size: 18px;
-}
-
-.maptext {
-  color: #000;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+.maprow {
+  color: #D6D0C6;
+  padding: 80px;
 }
 
 .timeline {
