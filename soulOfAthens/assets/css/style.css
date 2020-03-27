@@ -5,6 +5,7 @@ body {
   background-color: #D6D0C6;
   color: #000;
   font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
 }
 
 h1 {
@@ -189,8 +190,9 @@ footer p {
 }
 
 .introText {
-  top: 240px;
+  top: 180px;
   position: absolute;
+  color: #D6D0C6;
 }
 
 .mouse {
@@ -441,7 +443,6 @@ footer p {
 #map {
   width: 100%;
   height: 500px;
-
 }
 
 .mapboxgl-popup {
@@ -467,6 +468,54 @@ footer p {
 /* ---------------------------------------------------
     MEDIA QUEUES
 ----------------------------------------------------- */
+
+/* ---------------------------------------------------
+    MEDIA QUEUES 760px
+----------------------------------------------------- */
+
+@media screen and (max-width: 767px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  .row {
+    margin: 0px;
+  }
+
+  .definition {
+    font-size: 35px;
+    margin: 0;
+    line-height: 1;
+  }
+
+  .phonics {
+    font-style: normal;
+    font-size: 16px;
+    color: #737373;
+    margin: 0;
+  }
+
+  .definitionText {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+
+
+
+
+}
+
+
+/* ---------------------------------------------------
+    MEDIA QUEUES 450px
+----------------------------------------------------- */
+
 @media screen and (max-height: 450px) {
   .overlay {
     overflow-y: auto;
