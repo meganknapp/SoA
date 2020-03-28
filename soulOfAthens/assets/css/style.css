@@ -103,11 +103,11 @@ footer p {
 ----------------------------------------------------- */
 .logo {
   position: fixed;
-  top: 40px;
-  left: 46px;
-  padding: 8px;
-  width: 60px;
-  height: 45px;
+  top: 27px;
+  left: 20px;
+  margin: 8px;
+  width: auto;
+  height: 80px;
   z-index: 300;
 }
 
@@ -331,10 +331,11 @@ footer p {
 .definitionText {
   width: 600px;
   margin: 0 auto;
+  padding-bottom: 20px;
 }
 
-.audio {
-  margin-top: 60px;
+.audioPortrait {
+  width: 80%;
 }
 
 .bar {
@@ -520,8 +521,21 @@ footer p {
     width: 400px;
   }
 
+  .audioPortrait {
+    width: 100%;
+  }
 
 
+}
+
+/* ---------------------------------------------------
+    MEDIA QUEUES 575px
+----------------------------------------------------- */
+
+@media screen and (max-width: 575px) {
+  .audioPortrait {
+    width: 20%;
+  }
 }
 
 
