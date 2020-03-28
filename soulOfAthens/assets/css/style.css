@@ -50,6 +50,10 @@ a:active {
   text-decoration: none;
 }
 
+.container {
+  max-width: 1020px;
+}
+
 .row {
   padding-bottom: 40px;
 }
@@ -98,7 +102,6 @@ footer p {
     NAV STYLE
 ----------------------------------------------------- */
 .logo {
-  background-color: black;
   position: fixed;
   top: 40px;
   left: 46px;
@@ -117,6 +120,21 @@ footer p {
   color: black;
   cursor: pointer;
   z-index: 100;
+}
+
+.hamburgerBg {
+  position: fixed;
+  top: 39px;
+  right: 38px;
+  font-size: 36px;
+  padding: 8px;
+  background-color: #D6D0C6;
+  border-radius: 100px;
+  height: 65px;
+  width: 65px;
+  cursor: pointer;
+  z-index: 100;
+
 }
 
 .overlay {
@@ -141,15 +159,14 @@ footer p {
   z-index: 200;
   font-family: 'Playfair Display', serif;
   font-style: normal;
-
-  color: #000;
+  color: #D6D0C6;
 }
 
 .overlay a {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: #000;
+  color: #D6D0C6;
   font-weight: 700;
   display: block;
   transition: 0.3s;
@@ -326,15 +343,9 @@ footer p {
   height: 6px;
 }
 
-
-/* ---------------------------------------------------
-    MAPBOX STYLES
------------------------------------------------------ */
-
 #map {
   width: 100%;
   height: 500px;
-  margin-bottom: 30px;
 }
 
 .mapboxgl-popup {
@@ -372,6 +383,11 @@ footer p {
   text-transform: uppercase;
 }
 
+.pf {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+}
+
 .slideHeading {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
@@ -388,9 +404,17 @@ footer p {
   color: #F0ECE1;
 }
 
+.reveal {
+  background-color: #D6D0C6;
+}
+
 .reveal .controls .navigate-left,
 .reveal .controls .navigate-right {
   color: #F0ECE1;
+}
+
+.reveal-resize {
+  height: 100vh;
 }
 
 /* ---------------------------------------------------
@@ -401,12 +425,12 @@ footer p {
   font-size: 108px;
   text-transform: uppercase;
   color: #2C3415;
-  top: 81px;
+  top: 156px;
   z-index: 10;
 }
 
 .firstContentBlock {
-  padding-top: 170px;
+  padding-top: 245px;
 }
 
 .introParagraph {
@@ -478,6 +502,8 @@ footer p {
     font-size: 60px;
   }
 
+
+
   .row {
     margin: 0px;
   }
@@ -492,10 +518,6 @@ footer p {
 
   .definitionText {
     width: 400px;
-  }
-
-iframe {
-  height: 9000px;
   }
 
 
