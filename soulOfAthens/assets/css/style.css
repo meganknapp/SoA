@@ -65,7 +65,7 @@ a:active {
   padding-top: 5px;
 }
 
-.btn {
+/* .btn {
   background-color: #CC8126;
   color: #D6D0C6 !important;
   text-transform: uppercase;
@@ -77,7 +77,68 @@ a:active {
   background-color: #E8C090;
   color: #2C3415 !important;
   border: 1px solid #2C3415;
+} */
+
+/* .ssBtn {
+  background-color: transparent;
+  color: #D6D0C6 !important;
+  text-transform: capitlize;
+  padding: 10px;
+  border: 3px solid #D6D0C6;
+  border-radius: 25px;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
 }
+
+.ssBtn:hover {
+  background-color: #D6D0C6;
+  color: ;
+  border: 3px solid #D6D0C6;
+} */
+
+.btn {
+  border-radius: 50px;
+  border: 3px solid #D6D0C6;
+  color: #D6D0C6;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.btn:active {
+	border-color: #17954c;
+	color: #17954c;
+}
+
+.btnArrow:hover {
+	background: #24b662;
+}
+
+.btnArrow:before {
+	position: absolute;
+	height: 100%;
+	font-size: 125%;
+	line-height: 3.5;
+	color: red;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btnArrow:active:before {
+	color: blue;
+}
+
+/* Button 4a */
+.btnArrow:before {
+	left: 130%;
+	top: 0;
+}
+
+.btnArrow:hover:before {
+	left: 80%;
+}
+
 
 footer {
   background-color: #3D3522;
@@ -379,14 +440,14 @@ footer p {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 16px;
+  font-size: 18px;
   color: #F0ECE1;
   text-transform: uppercase;
 }
 
 .pf {
   font-family: 'Playfair Display', serif;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .slideHeading {
