@@ -52,7 +52,7 @@ a:active {
 }
 
 .container {
-  max-width: 1020px;
+    max-width: 80vw;
 }
 
 .row {
@@ -486,6 +486,16 @@ footer p {
 ----------------------------------------------------- */
 
 /* ---------------------------------------------------
+    MEDIA QUEUES 880px
+----------------------------------------------------- */
+
+@media screen and (max-width: 880px) {
+  .communityName {
+    font-size: 80px;
+  }
+}
+
+/* ---------------------------------------------------
     MEDIA QUEUES 767px
 ----------------------------------------------------- */
 
@@ -560,6 +570,10 @@ footer p {
     overflow: hidden;
     font-family: 'Open Sans', sans-serif;
     font-size: 26px;
+  }
+
+  .communityName {
+    font-size: 48px;
   }
 
 
