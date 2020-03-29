@@ -3,7 +3,7 @@
 ----------------------------------------------------- */
 body {
   background-color: #d6d0c6;
-  background-image: url(assets/img/texture.png);
+  background-image: url("http://www.transparenttextures.com/patterns/concrete-wall.png");
   color: #000;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -79,28 +79,6 @@ a:active {
 	background-color: #D6D0C6;
 	color: #000;
 }
-
-
-
-
-.custom-gutter > [class*='col-'] {
-    padding-right:4px;
-    padding-left:4px;
-}
-
-.custom-gutter > [class*="col-"]:first-child {
-  padding-left:15px;
-}
-
-.custom-gutter > [class*="col-"]:last-child {
-  padding-right:15px;
-}
-
-
-
-
-
-
 
 footer {
   background-color: #3D3522;
@@ -229,7 +207,7 @@ footer p {
 
 #definition {
   background-color: #d6d0c6;
-  background-image: url(assets/img/texture.png);
+  background-image: url("http://www.transparenttextures.com/patterns/concrete-wall.png");
 }
 
 .introText {
@@ -463,11 +441,11 @@ footer p {
 .jumbotron {
   border-radius: 0px;
   background:
-    linear-gradient(rgba(107, 93, 72, 0.15),
-      rgba(60, 53, 34, 0.85)),
+    /* linear-gradient(rgba(107, 93, 72, 0.15),
+      rgba(60, 53, 34, 0.85)), */
     url("../img/fireBlackLocust.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-size: cover;
   color: #D6D0C6 !important;
   height: 650px;
