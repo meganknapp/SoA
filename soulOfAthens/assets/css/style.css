@@ -146,6 +146,7 @@ footer p {
   top: 0;
   left: 0;
   background-color: #2C3415;
+  background-image: url("http://www.transparenttextures.com/patterns/concrete-wall.png");
   overflow-y: hidden;
   transition: 0.5s;
   z-index: 200;
@@ -168,7 +169,6 @@ footer p {
   text-decoration: none;
   font-size: 36px;
   color: #D6D0C6;
-  font-weight: 700;
   display: block;
   transition: 0.3s;
   z-index: 200;
@@ -176,7 +176,7 @@ footer p {
 
 .overlay a:hover,
 .overlay a:focus {
-  color: #000;
+  font-weight: bolder;
 }
 
 .overlay .closebtn {
