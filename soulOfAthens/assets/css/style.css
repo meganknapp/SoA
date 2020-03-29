@@ -455,21 +455,6 @@ footer p {
   text-align: left;
 }
 
-.leftImg {
-  padding-top: 60px;
-}
-
-.centerImg {
-  position: absolute;
-  width: 500px;
-  margin: 0 auto;
-  left: 350px;
-  z-index: 10;
-  padding-top: 350px;
-}
-
-.rightImg {}
-
 .nextCommunity {
   width: 100%;
   background-color: #6B5D48;
@@ -531,7 +516,11 @@ footer p {
     width: 100%;
   }
 
-
+  .maprow {
+    color: #D6D0C6;
+    padding: 10px;
+    padding-top: 40px;
+  }
 
   .timeline {
     font-family: 'Lato', sans-serif;
