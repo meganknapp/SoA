@@ -2,7 +2,8 @@
     UNIVERSAL STYLES
 ----------------------------------------------------- */
 body {
-  background-color: #D6D0C6;
+  background-color: #d6d0c6;
+  background-image: url(assets/img/texture.png);
   color: #000;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -227,7 +228,8 @@ footer p {
 /* -------------- Definition ----------------- */
 
 #definition {
-  background-color: #D6D0C6;
+  background-color: #d6d0c6;
+  background-image: url(assets/img/texture.png);
 }
 
 .introText {
