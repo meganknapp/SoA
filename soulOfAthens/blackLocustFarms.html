@@ -22,6 +22,8 @@
   </script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">
   </script>
+  <!-- video popup stylesheet -->
+  <link rel="stylesheet" href="assets/css/videopopup.css">
 </head>
 
 <body>
@@ -62,6 +64,12 @@
       <div class="col-sm-12 col-md-6 ">
         <h3>Black Locust’s organizing principles</h3>
         <p>Charlene Suggs, a contracts expert from the Wisteria community group is helping them draw up their land agreement. Charlene pointed out that of the 100 communities that intend to form, 99% fail. Part of being intentional about forming a community is getting agreements about how land ownership will be managed, what the guiding principal of a community will be, and how decisions will be made. Having these legal agreements is the insurance that, whatever challenges the community faces in the future, they have the means to solve.</p>
+
+        <!-- button for video popup -->
+                  <a class=" btn popup-vimeo" href="https://vimeo.com/400317949">Play video</a>
+        <!-- end button for video popup -->
+
+
       </div><!-- close col-sm-12 col-md-6  -->
     </div> <!-- close standardRow  -->
 
@@ -282,6 +290,37 @@
         document.getElementById("myNav").style.height = "0%";
       }
     </script>
+
+
+
+    <!-- js needed for video popup -->
+    <!-- Magnific Popup core CSS file -->
+      <link rel="stylesheet" href="assets/js/magnific-popup/magnific-popup.css">
+
+      <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+      <!-- Magnific Popup core JS file -->
+      <script src="assets/js/magnific-popup/jquery.magnific-popup.js"></script>
+
+
+    <script>
+
+      $(document).ready(function() {
+
+      $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+
+        fixedContentPos: false
+        });
+      });
+
+    </script>
+    <!-- end js needed for video popup -->
 
 </body>
 
