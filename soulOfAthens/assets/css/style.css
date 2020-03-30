@@ -517,39 +517,24 @@ footer p {
   }
 
   .maprow {
-    color: #D6D0C6;
     padding: 10px;
     padding-top: 40px;
   }
 
   .timeline {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-style: normal;
     font-size: 28px;
-    color: #F0ECE1;
-    text-transform: uppercase;
   }
 
   .pf {
-    font-family: 'Playfair Display', serif;
     font-size: 30px;
   }
 
   .slideHeading {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    font-style: normal;
     font-size: 90px;
-    color: #F0ECE1;
   }
 
   .about {
-    font-family: 'Lato', serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 26px;
-    color: #F0ECE1;
   }
 
   .btn {
@@ -596,5 +581,35 @@ footer p {
     font-size: 40px;
     top: 15px;
     right: 35px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  .introText {
+    top: 244px;
+  }
+
+  .definitionText {
+    width: 300px;
+  }
+
+  .timeline {
+    font-size: 33px;
+  }
+
+  .pf {
+    font-size: 35px;
+  }
+
+  .slideHeading {
+    font-size: 95px;
+  }
+
+  .about {
+    font-size: 31px;
   }
 }
