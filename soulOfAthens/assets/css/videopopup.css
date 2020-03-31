@@ -1,30 +1,68 @@
+.round-button {
+  box-sizing: border-box;
+  display: block;
+  width: 100px;
+  height: 100px;
+  padding-top: 22px;
+  padding-left: 10px;
+  line-height: 20px;
+  border: 6px solid #CC8126;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  background-color: #CC8126;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* this should be making the play button white not black */
+.fas.fa-play {
+  color: white;
+}
+
+/* This is button hover effects */
+/* .round-button:hover {
+  background-color: rgba;
+  box-shadow: 0px 0px 10px rgba(255, 255, 100, 1);
+  text-shadow: 0px 0px 10px rgba(255, 255, 100, 1);
+} */
+
+.btn.popup-vimeo {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #2C3415;
+}
+
 
 .mfp-fade.mfp-bg {
   opacity: 0;
   -webkit-transition: all 0.15s ease-out;
   -moz-transition: all 0.15s ease-out;
   transition: all 0.15s ease-out;
-  }
+}
 
 .mfp-fade.mfp-bg.mfp-ready {
   opacity: 0.8;
-  }
+}
 
 .mfp-fade.mfp-bg.mfp-removing {
   opacity: 0;
-  }
+}
 
 .mfp-fade.mfp-wrap .mfp-content {
   opacity: 0;
   -webkit-transition: all 0.15s ease-out;
   -moz-transition: all 0.15s ease-out;
   transition: all 0.15s ease-out;
-  }
+}
 
 .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
   opacity: 1;
-  }
-  
+}
+
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
   opacity: 0;
-  }
+}

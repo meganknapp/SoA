@@ -72,7 +72,6 @@ a:active {
 .btn {
   border-radius: 50px;
   border: 3px solid #D6D0C6;
-  color: #D6D0C6;
   overflow: hidden;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -454,7 +453,9 @@ footer p {
   /* background-attachment: fixed; */
   background-size: cover;
   color: #D6D0C6 !important;
-  height: 650px;
+  width: auto;
+  height: 100vh;
+  background-position: center;
 }
 
 .jumbotronText {
@@ -468,7 +469,19 @@ footer p {
   padding: 30px;
 }
 
+.round-button:link {
+  color: #D6D0C6;
+  text-decoration: none;
+}
 
+.round-button:hover {
+  color: #2C3415;
+  text-decoration: none;
+}
+
+.round-button:active {
+  color: #D6D0C6;
+}
 
 
 
