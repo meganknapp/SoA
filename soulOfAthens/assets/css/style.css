@@ -462,6 +462,32 @@ footer p {
   text-align: left;
 }
 
+.jumbotron.currents {
+  border-radius: 0px;
+  background:
+    /* linear-gradient(rgba(107, 93, 72, 0.15),
+      rgba(60, 53, 34, 0.85)), */
+    url("../img/girlDrill.jpg");
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  color: #D6D0C6 !important;
+  width: auto;
+  height: 100vh;
+  background-position: center;
+  opacity: .9;
+}
+
+
+.jumbotronText {
+  text-align: left;
+}
+
+.jumbotronTextH3 {
+  text-align: left;
+  padding-bottom: 20px;
+}
+
 .nextCommunity {
   width: 100%;
   background-color: #6B5D48;
