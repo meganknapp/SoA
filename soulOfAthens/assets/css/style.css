@@ -212,6 +212,26 @@ footer p {
   z-index: -999;
 }
 
+#landingImg {
+  border-radius: 0px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)),
+    url("../img/fireBlackLocust.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+  background-attachment: fixed;
+
+  height: 100vh;
+  min-height: 500px;
+}
+
+section {
+  padding-bottom: 60px;
+}
+
 /* -------------- Definition ----------------- */
 
 #definition {
