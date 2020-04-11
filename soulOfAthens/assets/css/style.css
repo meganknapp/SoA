@@ -32,6 +32,7 @@ h3 {
   font-weight: 700;
   font-style: normal;
   font-size: 24 px;
+  padding-bottom: 20px;
 }
 
 a:link {
@@ -111,6 +112,19 @@ section {
   padding-bottom: 60px;
 }
 
+.photo {
+  width: 50%;
+}
+
+.photoLeft {
+  width: 100%;
+  padding: 0px 20px 20px 0px;
+}
+
+.photoRight {
+  width: 100%;
+  padding: 0px 0px 20px 20px;
+}
 
 /* ---------------------------------------------------
     NAV STYLE
@@ -504,7 +518,7 @@ section {
 }
 
 .pullQuote {
-  padding: 60px 0px 60px 0px;
+  padding: 40px 0px 40px 0px;
   font-size: 35px;
   font-family: 'Playfair Display', serif;
   font-weight: bold;
