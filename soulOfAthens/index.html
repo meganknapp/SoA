@@ -10,8 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Bootstrap Stylesheet -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!-- Reveal Stylesheet -->
   <!-- <link rel="stylesheet" href="assets/css/reveal.css"> -->
   <!-- Custom Stylesheet -->
@@ -19,11 +18,9 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,700&display=swap" rel="stylesheet">
   <!-- FontAwesome -->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
-    integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous">
   </script>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
-    integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">
   </script>
 
 
@@ -38,7 +35,7 @@
 
 <body>
 
-  <section id="navigation">
+  <div id="navigation">
     <div id="myNav" class="overlay">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <div class="overlay-content">
@@ -52,13 +49,15 @@
     <a href="index.html">
       <div><img class="logo" src="assets/img/logo-circle.svg"></div>
     </a> <!-- close logo -->
-  </section> <!-- close navigation -->
+  </div> <!-- close navigation -->
 
   <section id="landingVid">
-    <div class="video">
-      <video autoplay muted loop id="myVideo">
-        <source src="assets/video/introVideo.mp4" type="video/mp4">
-      </video>
+    <div class="videoOpacity">
+      <div class="video">
+        <video autoplay muted loop id="myVideo">
+          <source src="assets/video/introVideo.mp4" type="video/mp4">
+        </video>
+      </div>
     </div>
 
     <div class="container-fluid landing">
@@ -106,16 +105,16 @@
         <div class="col-md-2 text-center hidden"></div>
 
         <div class='col-sm-6 col-md-2 text-center pad'>
-          <img src="assets/img/badgerAudioPortrait.png" class="img-fluid audioPortrait">
+          <img src="assets/img/sashaAudioPortrait.png" class="img-fluid audioPortrait">
         </div>
         <div class='col-sm-6 col-md-2 text-center pad'>
           <img src="assets/img/badgerAudioPortrait.png" class="img-fluid audioPortrait">
         </div>
         <div class='col-sm-6 col-md-2 text-center'>
-          <img src="assets/img/badgerAudioPortrait.png" class="img-fluid audioPortrait">
+          <img src="assets/img/martyAudioPortrait.png" class="img-fluid audioPortrait">
         </div>
         <div class='col-sm-6 col-md-2 text-center'>
-          <img src="assets/img/badgerAudioPortrait.png" class="img-fluid audioPortrait">
+          <img src="assets/img/eddieAudioPortrait.png" class="img-fluid audioPortrait">
         </div>
 
         <div class="col-md-2 text-center"></div>
@@ -125,11 +124,11 @@
 
       <div class="row" style="padding: 0px;">
         <div class="col-sm-12 text-center">
-          <p class="definitionText text-center">Listen to how members of intentional communities describe what their
+          <p class="definitionText text-center">Listen to how four members of intentional communities describe what their
             community means to them.<p>
               <div class="audioPlay text-center">
                 <audio controls>
-                  <source src="assets/audio/audio.mp4" type="audio/mpeg">
+                  <source src="assets/audio/homeAudio.wav" type="audio/mpeg">
                   Your browser does not support the audio element.
                 </audio>
               </div> <!-- close audioPlay -->
@@ -147,7 +146,7 @@
         <!-- Mapbox stuff -->
         <div class="col-sm-12 col-md-12 col-lg-6 text-left">
           <div id="map"></div>
-          <p class="pcut">Click on a location to learn more about it.</p>
+          <p class="pcut">Zoom in to enlarge locations and click on a location to learn more about it.</p>
         </div>
         <!-- Close Mapbox stuff -->
 
@@ -191,16 +190,13 @@
 
 
   <!-- jQuery CDN - Slim version (=without AJAX) -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
   </script>
   <!-- Popper.JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
-    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
   </script>
   <!-- Bootstrap JS -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
-    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
   </script>
 
 
@@ -225,7 +221,7 @@
       hash: true,
     });
 
-    map.on('load', function () {
+    map.on('load', function() {
       map.addSource('places', {
         'type': 'geojson',
         'data': {
@@ -285,7 +281,7 @@
 
       // When a click event occurs on a feature in the places layer, open a popup at the
       // location of the feature, with description HTML from its properties.
-      map.on('click', 'places', function (e) {
+      map.on('click', 'places', function(e) {
         var coordinates = e.features[0].geometry.coordinates.slice();
         var description = e.features[0].properties.description;
 
@@ -303,12 +299,12 @@
       });
 
       // Change the cursor to a pointer when the mouse is over the places layer.
-      map.on('mouseenter', 'places', function () {
+      map.on('mouseenter', 'places', function() {
         map.getCanvas().style.cursor = 'pointer';
       });
 
       // Change it back to a pointer when it leaves.
-      map.on('mouseleave', 'places', function () {
+      map.on('mouseleave', 'places', function() {
         map.getCanvas().style.cursor = '';
       });
     });

@@ -107,6 +107,10 @@ footer p {
   margin-bottom: 8px;
 }
 
+section {
+  padding-bottom: 60px;
+}
+
 
 /* ---------------------------------------------------
     NAV STYLE
@@ -203,6 +207,9 @@ footer p {
 #landingVid {
   height: 100vh;
   min-height: 500px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3));
 }
 
 .video video {
@@ -256,9 +263,7 @@ footer p {
   min-height: 500px;
 }
 
-section {
-  padding-bottom: 60px;
-}
+
 
 /* -------------- Definition ----------------- */
 
@@ -499,11 +504,11 @@ section {
 }
 
 .pullQuote {
-  padding: 20px 0px 20px 0px;
+  padding: 60px 0px 60px 0px;
   font-size: 35px;
   font-family: 'Playfair Display', serif;
   font-weight: bold;
-  text-align: right;
+  text-align: center;
   color: #3D3522;
 }
 
