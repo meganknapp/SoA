@@ -4,7 +4,7 @@
 body {
   background-color: #d6d0c6;
   background-image: url("http://www.transparenttextures.com/patterns/concrete-wall.png");
-  color: #000;
+  color: #101010;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   margin: 0;
@@ -114,6 +114,10 @@ section {
 
 .photo {
   width: 50%;
+}
+
+.photoLarge {
+  width: 60%;
 }
 
 .photoLeft {
@@ -415,7 +419,7 @@ section {
   padding-bottom: 20px;
 }
 
-.audioPortrait {
+.Portrait {
   width: 60%;
 }
 
