@@ -35,13 +35,21 @@ h3 {
   padding-bottom: 20px;
 }
 
+.subhed {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
 a:link {
   color: #FFF;
   text-decoration: none;
 }
 
 a:hover {
-  color: #CA4A41;
+  color: #CC8126;
   text-decoration: none;
 }
 
@@ -88,7 +96,7 @@ a:active {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   font-weight: bold;
-  padding: 10px;
+  padding: 10px 14px 10px 14px;
 }
 
 .ssbtn:hover {
@@ -274,7 +282,6 @@ section {
 #currentsLandingImg {
   border-radius: 0px;
   background:
-
     url("../img/cookingCurrents.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -536,6 +543,16 @@ section {
 
 .reveal-resize {
   height: 100vh;
+}
+
+.ssCredit {
+  font-weight: lighter;
+  font-style: normal;
+  font-size: 12px;
+  bottom: 0;
+  left:0;
+  color: #D6D0C6;
+  position: absolute;
 }
 
 /* ---------------------------------------------------

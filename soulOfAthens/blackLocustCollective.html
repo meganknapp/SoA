@@ -28,9 +28,8 @@
   <!-- video popup stylesheet -->
   <link rel="stylesheet" href="assets/css/videopopup.css">
   <script src="https://kit.fontawesome.com/1f958749ac.js" crossorigin="anonymous"></script>
-  <!-- soundcite -->
-  <link href='https://cdn.knightlab.com/libs/soundcite/latest/css/player.css' rel='stylesheet' type='text/css'>
-  <script type='text/javascript' src='https://cdn.knightlab.com/libs/soundcite/latest/js/soundcite.min.js'></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 <body>
 
@@ -45,10 +44,10 @@
         <a href="subamuh.html">III. SuBAMUH</a>
       </div>
     </div>
-    <span class="hamburger" onclick="openNav()">&#9776;</span>
+    <div class="hamburgerBg" data-aos="fade-up" data-aos-duration="1000"> <span class="hamburger" onclick="openNav()">&#9776;</span> </div><!-- close hamburger -->
     <a href="index.html">
-      <div><img class="logo" src="assets/img/logo-circle.svg"></div>
-    </a>
+      <div><img data-aos="fade-up" data-aos-duration="1000" class="logo" src="assets/img/logo-circle.svg"></div>
+    </a> <!-- close logo -->
   </div> <!-- close navigation -->
 
   <div id="blcLandingImg">
@@ -56,9 +55,9 @@
     <div class="container-fluid landing">
       <div class="row">
         <div class="col-sm-12 text-center introText">
-          <h1>I. Black Locust <br>Collective</h1>
+          <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">I. Black Locust <br>Collective</h1>
           <br>
-          <p>A new community.</p>
+          <p class="subhed" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">A new community.</p>
         </div>
 
       </div>
@@ -72,8 +71,8 @@
         <div class="col-sm-12">
 
           <div class="photo float-right">
-            <img loading="lazy" class="photoRight" src="assets/img/goatLine.jpg" >
-            <p class="photoRight pcut">Sasha Segetic runs the goat herd at Black Locust Collective up to the pasture to feed them and let them forage. Sasha is raising the goats for meat and dairy production.<br><i>Molly Roberts</i></p>
+            <img class="photoRight" src="assets/img/goatLine.jpg" >
+            <p class="photoRight pcut">Sasha Segetic runs the goat herd at Black Locust Collective up to the pasture to feed them and let them forage. Sasha is raising the goats for meat and dairy production.<br><i>Photograph by: Molly Roberts</i></p>
           </div>
 
           <p>Like many 21st century beginnings, Ross Martin, Kurt Belser and Sasha Segetic met online. Twenty people on an internet listserv originally discussed the possibility of starting a community based on anarchy and racial justice. In its earliest stage the community was dubbed the Anarchists Permaculture Utopia. By the time the group finally took steps to make this idea a reality, these three friends were the only remaining members willing to put shovels into the ground.</p>
@@ -87,7 +86,7 @@
       <div class="row">
       <div class="col-md-1"></div>
       <div class="col-sm-12 col-md-10 text-center">
-        <p class="pullQuote">"We want people to be kinder to each other and to stop perpetuating inherited traumas, like racism, on each other." <br><span class="pqCredit">- Badger Jonson</span></p>
+        <p class="pullQuote">"We want people to be kinder to each other and to stop perpetuating inherited traumas, like racism, on each other." <br><span class="pqCredit">- Badger Johnson</span></p>
       </div>
       <div class="col-md-1"></div>
     </div>
@@ -100,7 +99,7 @@
 
           <div class="photo float-left">
             <img class="photoLeft" src="assets/img/badgerFire.jpg" >
-            <p class="photoLeft pcut">Badger Johnson of Black Locust Collective, demonstrates a controlled burn at the Woodcock Nature Preserve in Athens Ohio. Badger uses this Native Amertican technique to control invasive species and restore the land.<br><i>Molly Roberts</i></p>
+            <p class="photoLeft pcut">Badger Johnson of Black Locust Collective, demonstrates a controlled burn at the Woodcock Nature Preserve in Athens Ohio. Badger uses this Native Amertican technique to control invasive species and restore the land.<br><i>Photograph by: Molly Roberts</i></p>
           </div>
 
           <p>Charlene Suggs, a contracts expert from the Wisteria community group is helping them draw up their land agreement. Charlene points out that of 100 communities that intend to form, a majority fail. Part of being intentional about forming a community is getting agreements about how land ownership will be managed, what the guiding principle of a community will be, and how decisions will be made. These legal agreements are insurance that whatever challenges the community faces in the future, they have the means and principles to solve.</p>
@@ -122,7 +121,7 @@
           <h3>Organized Anarchy</h3>
           <div class="photoLarge float-right">
             <img class="photoRight" src="assets/img/blackLocustGroup.jpg" >
-            <p class="photoRight pcut">Badger Johnson, Sasha S. and Kurt prepare a meal in their kitchen.<br><i>Molly Roberts</i></p>
+            <p class="photoRight pcut">Badger Johnson, Sasha S. and Kurt prepare a meal in their kitchen.<br><i>Photograph by: Molly Roberts</i></p>
           </div>
 
           <p>Listen to Badger Johnson's thoughts on anarchy, which is the organizing principle of Black Locust Collective.<p>
@@ -149,12 +148,12 @@
       <div class="row gutter">
         <div class="col-sm-12 col-md-6">
           <img src="assets/img/goatFaceBlackLocust.jpg" style="width: 100%;">
-          <p class="pcut">Sasha's goats.<br><i>Photograph: Molly Roberts</i></p>
+          <p class="pcut">A sheep named Big Sheep keeps the goats company in the pen at Black Locust Collective.<br><i>Photograph by: Molly Roberts</i></p>
         </div>
 
         <div class="col-sm-12 col-md-6">
           <img src="assets/img/goatsBlackLocust.jpg" style="width: 100%;">
-          <p class="pcut">Goat heard.<br><i>Photograph: Molly Roberts</i></p>
+          <p class="pcut">Sasha Segetic is raising goats for both milk at meat for the community.<br><i>Photograph by: Molly Roberts</i></p>
         </div>
       </div>
 
@@ -175,7 +174,7 @@
 
           <div class="photoLarge float-right">
             <img class="photoRight" src="assets/img/children.jpg" >
-            <p class="photoRight pcut">Sasha Segetic and her daughter, Mirna 9, hang out on the front porch at Black Locust collective.“She’s conneted to the land,” Sasha says of Mirna, “ I think this place is definitely a part of her.”<br><i>Molly Roberts</i></p>
+            <p class="photoRight pcut">Sasha Segetic and her daughter, Mirna 9, hang out on the front porch at Black Locust collective.“She’s connected to the land,” Sasha says of Mirna, “ I think this place is definitely a part of her.”<br><i>Photograph by: Molly Roberts</i></p>
           </div>
 
           <p>The other young’un on the farm is nine-year-old Mirna, who attends an alternative grade school in Athens called Solid Ground. She also pitches in to help Sasha take care of the goats and the Great Pyrenees who guard everyone who lives at Black Locust. When Sasha envisions the future of Black Locust collective, she sees an Eden of sorts, “a garden of food, animals and people.”</p>
@@ -186,7 +185,7 @@
 
           <p>Badger adds “When the Klu Klux Klan came to Dayton last year, at the invitation of the Black Panthers, we (the John Brown Gun Club) marched with them, to send a message to the Klan and the white police force. We want people to be kinder to each other and to stop perpetuating inherited traumas, like racism, on each other.”</p>
 
-          <p>If you are interested in learning more about Black Locust Collective, email them at blacklocustllc@gmail.com.</p>
+          <p>If you are interested in learning more about Black Locust Collective, email them at <a href="mailto:blacklocustllc@gmail.com"></i>blacklocustllc@gmail.com</p></a>.</p>
       </div>
     </div> <!-- close full pg text  -->
 </section>
@@ -289,6 +288,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
     integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
   </script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
   <!-- Reveal.js -->
   <!-- <script src="assets/js/reveal.js"></script>

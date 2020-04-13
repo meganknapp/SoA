@@ -26,6 +26,9 @@
   <link rel="stylesheet" href="assets/css/videopopup.css">
   <script src="https://kit.fontawesome.com/1f958749ac.js" crossorigin="anonymous"></script>
 
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
 </head>
 
 <body>
@@ -41,10 +44,10 @@
         <a href="subamuh.html">III. SuBAMUH</a>
       </div>
     </div>
-    <span class="hamburger" onclick="openNav()">&#9776;</span>
+    <div class="hamburgerBg" data-aos="fade-up" data-aos-duration="1000"> <span class="hamburger" onclick="openNav()">&#9776;</span> </div><!-- close hamburger -->
     <a href="index.html">
-      <div><img class="logo" src="assets/img/logo-circle.svg"></div>
-    </a>
+      <div><img data-aos="fade-up" data-aos-duration="1000" class="logo" src="assets/img/logo-circle.svg"></div>
+    </a> <!-- close logo -->
   </div> <!-- close navigation -->
 
   <div id="currentsLandingImg">
@@ -52,9 +55,9 @@
     <div class="container-fluid landing">
       <div class="row">
         <div class="col-sm-12 text-center introText2">
-          <h1>II. Currents</h1>
+          <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">II. Currents</h1>
           <br>
-          <p>Generational Transition of Power</p>
+          <p class="subhed" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">Generational transition of power.</p>
         </div>
 
       </div>
@@ -72,10 +75,10 @@
             <img class="photoRight" src="assets/img/swinging.png">
             <p class="photoRight pcut">Laura Rose and Joe Hazelbaker, who are raising 4 children at Currents community, hope that the
               sweet beginnings of this beautiful rural place will help the children develop skills and
-              resilence.<br><i>Photograph: Molly Roberts</i></p>
+              resilence.<br><i>Photograph by: Molly Roberts</i></p>
           </div>
 
-          <p>Currents community sprouted from a discussion group among members of a consumer co-op movement in Dayton
+          <p>Currents community sprouted from a discussion group among members of a consumer co-op movement in Dayton,
             Ohio in 1971. Ten years later, Roger Wilkens, Marty Zinn, Pete Hill, Eddie Kruse and Bob Henninge acquired
             163 acres of rolling farmland in Glouster, Ohio and the dream to build a community focused on cooperativism
             took root. </p>
@@ -89,7 +92,7 @@
       <div class="row">
         <div class="col-sm-12">
           <img style="width:100%;" src="assets/img/catTails.jpg">
-          <p class="pcut">Currents housing.<br><i>Photograph: Lili Kerr</i></p>
+          <p class="pcut">Currents housing.<br><i>Photograph by: Molly Roberts</i></p>
         </div>
       </div>
     </section> <!-- close full img  -->
@@ -99,12 +102,12 @@
       <div class="row">
 
         <div class="col-sm-12">
-          <h3>Organizing principle</h3>
+          <h3>Organizing Principle</h3>
 
           <div class="photo float-left">
             <img class="photoLeft" src="assets/img/nest.jpg">
             <p class="pcut">Sophia Rose and her friend Miriam found this birds nest on a hike in the woods of
-              Currents community.<br><i>Photograph: Molly Roberts</i></p>
+              Currents community.<br><i>Photograph by: Molly Roberts</i></p>
           </div>
 
           <p>The group envisioned Currents as a rural community where they could live out their shared values of
@@ -132,7 +135,7 @@
       <!-- text left/photo right  -->
       <div class="row">
         <div class="col-sm-12">
-          <h3>Gathering for brunch</h3>
+          <h3>Gathering for Brunch</h3>
           <div class="photo float-left">
             <img class="photoLeft" src="assets/img/cookingEggs.jpg">
             <p class="pcut">Erin Finck who rents space at Currents community dishes up an omelet at the Sunday morning
@@ -151,7 +154,7 @@
       <!-- text left/photo right  -->
       <div class="row">
         <div class="col-sm-12 ">
-          <h3>Transition of power</h3>
+          <h3>Transition of Power</h3>
 
           <div class="photoLarge float-right">
             <img class="photoRight" src="assets/img/bulletin.jpg">
@@ -164,7 +167,7 @@
             community. The steerer role rotates through the group twice a year. </p>
 
           <p>Laura joined Currents in 2009, and her leadership is an example of the transition that the founders of
-            Currents are making to transition younger members into the decision -making process.</p>
+            Currents are making to transition younger members into the decision-making process.</p>
 
           <p>Marty Zinn, one of the founders of Currents said, “I don’t think you can give intentional community to
             other people. They can learn about it from us, but only they can make it happen. What we are saying is; here
@@ -177,7 +180,7 @@
     <section>
       <div class="row">
         <div class="col-md-6">
-          <h3>Homeschooling children</h3>
+          <h3>Homeschooling Children</h3>
           <p>Laura and her husband Joe Hazelbaker are raising four children at Currents. Laura believes that living in a
             cooperative society is important, “I want my kids to have hope to overcome these huge difficulties we’re
             facing in the world, so the first part of their lives are filled with happiness and getting to know the
@@ -190,7 +193,7 @@
         <div class="col-md-6">
           <p class="pullQuote ">"I want my kids to have hope to overcome these huge difficulties we’re facing in
             the
-            world."<br><span class="pqCredit">-Erin Finck</span></p>
+            world."<br><span class="pqCredit">-Laura Rose</span></p>
         </div>
 
       </div>
@@ -318,6 +321,11 @@
   <!-- Bootstrap JS -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
   </script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
   <!-- Reveal.js -->
   <!-- <script src="assets/js/reveal.js"></script>
