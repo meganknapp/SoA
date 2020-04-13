@@ -102,22 +102,12 @@
 
       <div class="row">
 
-        <div class="col-md-2 text-center hidden"></div>
-
-        <div class='col-sm-6 col-md-2 text-center pad'>
+        <div class='col-sx-12 col-sm-12 col-md-12 text-center pad'>
           <img src="assets/img/sashaAudioPortrait.png" class="img-fluid audioPortrait">
-        </div>
-        <div class='col-sm-6 col-md-2 text-center pad'>
           <img src="assets/img/badgerAudioPortrait.png" class="img-fluid audioPortrait">
-        </div>
-        <div class='col-sm-6 col-md-2 text-center'>
           <img src="assets/img/martyAudioPortrait.png" class="img-fluid audioPortrait">
-        </div>
-        <div class='col-sm-6 col-md-2 text-center'>
           <img src="assets/img/eddieAudioPortrait.png" class="img-fluid audioPortrait">
         </div>
-
-        <div class="col-md-2 text-center"></div>
 
       </div> <!-- close row -->
 
@@ -146,7 +136,7 @@
         <!-- Mapbox stuff -->
         <div class="col-sm-12 col-md-12 col-lg-6 text-left">
           <div id="map"></div>
-          <p class="pcut">Zoom in to enlarge locations and click on a location to learn more about it.</p>
+          <p class="pcut">Click on a location to learn more about it.</p>
         </div>
         <!-- Close Mapbox stuff -->
 
@@ -221,6 +211,10 @@
       hash: true,
     });
 
+    // Add zoom and rotation controls to the map.
+    map.addControl(new mapboxgl.NavigationControl());
+
+
     map.on('load', function() {
       map.addSource('places', {
         'type': 'geojson',
@@ -229,7 +223,7 @@
           'features': [{
               'type': 'Feature',
               'properties': {
-                'description': '<strong class="mapheader">Black Locust</strong><p class="maptext">An XXX year old community founded on the principle of XXXXXX</p>',
+                'description': '<strong class="mapheader">Black Locust</strong><p class="maptext">An 7 year old community founded on the principle of anarchy and social justice.</p>',
                 'icon': 'farm'
 
               },
@@ -241,7 +235,7 @@
             {
               'type': 'Feature',
               'properties': {
-                'description': '<strong class="mapheader">Currents</strong><p class="maptext">An XXX year old community founded on the principle of XXXXXX</p>',
+                'description': '<strong class="mapheader">Currents</strong><p class="maptext">An 39 year old community founded on the principle of cooperation and social activism.</p>',
                 'icon': 'farm'
               },
               'geometry': {
@@ -252,7 +246,7 @@
             {
               'type': 'Feature',
               'properties': {
-                'description': '<strong class="mapheader">Subamuh</strong><p class="maptext">An XXX year old community founded on the principle of XXXXXX</p>',
+                'description': '<strong class="mapheader">Subamuh</strong><p class="maptext">An 41 year old community founded on the principle of feminism.</p>',
                 'icon': 'farm'
               },
               'geometry': {

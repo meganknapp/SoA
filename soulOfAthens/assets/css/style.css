@@ -79,6 +79,23 @@ a:active {
   font-size: 16px;
 }
 
+.ssbtn {
+  border-radius: 50px;
+  border: 3px solid #D6D0C6;
+  color: #D6D0C6;
+  background-color: transparent;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.ssbtn:hover {
+  background-color: #D6D0C6;
+  color: #000;
+}
+
 .btn:hover {
   background-color: #D6D0C6;
   color: #000;
@@ -226,8 +243,8 @@ section {
   height: 100vh;
   min-height: 500px;
   background:
-    linear-gradient(rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3));
+    linear-gradient(rgba(0, 0, 0, 0.20),
+      rgba(0, 0, 0, 0.70));
 }
 
 .video video {
@@ -235,6 +252,8 @@ section {
   position: fixed;
   top: 0;
   z-index: -999;
+  background-position: center;
+
 }
 
 #blcLandingImg {
@@ -292,6 +311,11 @@ section {
 
 .introText {
   top: 180px;
+  color: #D6D0C6;
+}
+
+.introText2 {
+  top: 220px;
   color: #D6D0C6;
 }
 
@@ -423,6 +447,11 @@ section {
   width: 60%;
 }
 
+.audioPortrait {
+  width: 125px;
+  margin: 0px 40px 0px 40px;
+  box-sizing: border-box;
+}
 
 
 /* -------------- Map ----------------- */
@@ -477,7 +506,7 @@ section {
 
 .pf {
   font-family: 'Playfair Display', serif;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .slideHeading {
@@ -512,14 +541,6 @@ section {
 /* ---------------------------------------------------
     COMMUNITY PAGE STYLES
 ----------------------------------------------------- */
-.communityName {
-  font-size: 108px;
-  text-transform: uppercase;
-  color: #2C3415;
-  padding-top: 156px;
-  padding-bottom: 40px;
-  z-index: 10;
-}
 
 .pullQuote {
   padding: 40px 0px 40px 0px;
@@ -605,17 +626,19 @@ section {
 /* ---------------------------------------------------
     MEDIA QUEUES
 ----------------------------------------------------- */
-
-/* ---------------------------------------------------
-    MEDIA QUEUES 880px
------------------------------------------------------ */
-
-@media screen and (max-width: 880px) {
-  .communityName {
-    font-size: 80px;
-  }
+@media screen and (max-width: 1040px) {
+.audioPortrait {
+  width: 100px;
+  margin: 0px 30px 0px 30px;
+  box-sizing: border-box;
 }
 
+@media screen and (max-width: 816px) {
+.audioPortrait {
+  width: 80px;
+  margin: 0px 18px 0px 18px;
+  box-sizing: border-box;
+}
 /* ---------------------------------------------------
     MEDIA QUEUES 767px
 ----------------------------------------------------- */
@@ -630,7 +653,23 @@ section {
     font-size: 60px;
   }
 
+  .photo {
+    width: 100%;
+  }
 
+  .photoLarge {
+    width: 100%;
+  }
+
+  .photoLeft {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .photoRight {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+  }
 
   .row {
     margin: 0px;
@@ -649,7 +688,9 @@ section {
   }
 
   .audioPortrait {
-    width: 100%;
+    width: 80px;
+    margin: 0px 18px 0px 18px;
+    box-sizing: border-box;
   }
 
   .maprow {
@@ -657,20 +698,29 @@ section {
     padding-top: 40px;
   }
 
-  .timeline {
-    font-size: 28px;
+  .slides {
+    box-sizing: border-box;
+    padding: 0px;
   }
 
-  .pf {
-    font-size: 30px;
+  .timeline {
+    font-size: 20px;
   }
+
+
 
   .slideHeading {
-    font-size: 90px;
+    font-size: 80px;
   }
 
   .about {
-    font-size: 26px;
+    font-size: 20px;
+  }
+
+  .ssbtn {
+    font-size: 22px;
+    padding: 20px;
+    font-weight: bold;
   }
 
   .btn {
@@ -679,8 +729,9 @@ section {
     color: #D6D0C6;
     overflow: hidden;
     font-family: 'Open Sans', sans-serif;
-    font-size: 26px;
+    font-size: 16px;
   }
+
 
   .communityName {
     font-size: 48px;
@@ -693,9 +744,64 @@ section {
     MEDIA QUEUES 575px
 ----------------------------------------------------- */
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 633px) {
   .audioPortrait {
-    width: 50%;
+    width: 80px;
+    margin: 0px 12px 0px 12px;
+    box-sizing: border-box;
+  }
+
+  .pullQuote {
+    font-size: 28px;
+  }
+
+  .timeline {
+    font-size: 25px;
+  }
+
+  .slideHeading {
+    font-size: 85px;
+  }
+
+  .about {
+    font-size: 25px;
+  }
+
+  .ssbtn {
+    font-size: 27px;
+    padding: 25px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .audioPortrait {
+    width: 110px;
+    margin: 0px 18px 16px 18px;
+    box-sizing: border-box;
+  }
+
+  .timeline {
+    font-size: 30px;
+    padding-bottom:10px;
+  }
+
+  .slideHeading {
+    font-size: 95px;
+    padding-bottom:10px;
+
+  }
+
+  .about {
+    font-size: 32px;
+    padding-bottom:10px;
+
+  }
+
+  .ssbtn {
+    font-size: 30px;
+    padding: 25px;
+    font-weight: bold;
   }
 }
 
@@ -734,10 +840,6 @@ section {
   }
 
   .timeline {
-    font-size: 33px;
-  }
-
-  .pf {
     font-size: 35px;
   }
 
@@ -746,6 +848,12 @@ section {
   }
 
   .about {
-    font-size: 31px;
+    font-size: 35px;
+  }
+
+  .ssbtn {
+    font-size: 37px;
+    padding: 25px;
+    font-weight: bold;
   }
 }
