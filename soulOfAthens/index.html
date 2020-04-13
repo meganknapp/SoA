@@ -23,6 +23,8 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">
   </script>
 
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
 
   <!-- Mapbox Stuff -->
@@ -45,9 +47,9 @@
         <a href="subamuh.html">III. Subamah</a>
       </div> <!-- close overlay-content -->
     </div> <!-- close myNav -->
-    <div class="hamburgerBg"> <span class="hamburger" onclick="openNav()">&#9776;</span> </div><!-- close hamburger -->
+    <div class="hamburgerBg" data-aos="fade-up" data-aos-duration="1000"> <span class="hamburger" onclick="openNav()">&#9776;</span> </div><!-- close hamburger -->
     <a href="index.html">
-      <div><img class="logo" src="assets/img/logo-circle.svg"></div>
+      <div><img data-aos="fade-up" data-aos-duration="1000" class="logo" src="assets/img/logo-circle.svg"></div>
     </a> <!-- close logo -->
   </div> <!-- close navigation -->
 
@@ -63,19 +65,19 @@
     <div class="container-fluid landing">
       <div class="row">
         <div class="col-sm-12 text-center introText">
-          <h1>Intentional<br>Communities</h1>
+          <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Intentional<br>Communities</h1>
           <br>
-          <p>Making a family of likeminded strangers.</p>
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">Making a family of likeminded strangers.</p>
         </div> <!-- close introText -->
         <a href="#" class="scrollDown">
-          <div class="mouse">
+          <div class="mouse" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" data-aos-anchor-placement="top-bottom">
             <div class="mouse-icon">
               <span class="mouse-wheel"></span>
             </div> <!-- close mouse-icon -->
           </div> <!-- close mouse -->
         </a> <!-- close a scrollDown -->
       </div> <!-- close row -->
-      <div class="topLine"></div>
+      <div class="topLine" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom"></div>
       <div class="bottomLine"></div>
     </div> <!-- close container-fluid/landing -->
   </section> <!-- close landingVid -->
@@ -103,10 +105,10 @@
       <div class="row">
 
         <div class='col-sx-12 col-sm-12 col-md-12 text-center pad'>
-          <img src="assets/img/sashaAudioPortrait.png" class="img-fluid audioPortrait">
-          <img src="assets/img/badgerAudioPortrait.png" class="img-fluid audioPortrait">
-          <img src="assets/img/martyAudioPortrait.png" class="img-fluid audioPortrait">
-          <img src="assets/img/eddieAudioPortrait.png" class="img-fluid audioPortrait">
+          <img src="assets/img/sashaAudioPortrait.png" class="img-fluid audioPortrait" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100" >
+          <img src="assets/img/badgerAudioPortrait.png" class="img-fluid audioPortrait" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" >
+          <img src="assets/img/martyAudioPortrait.png" class="img-fluid audioPortrait" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600" >
+          <img src="assets/img/eddieAudioPortrait.png" class="img-fluid audioPortrait" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="900" >
         </div>
 
       </div> <!-- close row -->
@@ -188,6 +190,17 @@
   <!-- Bootstrap JS -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
   </script>
+
+
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+
 
 
   <!-- MAPBOX SCRIPTS BELLOW -->
