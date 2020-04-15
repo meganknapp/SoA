@@ -74,7 +74,7 @@ a:active {
 .pcut {
   font-weight: lighter;
   font-style: normal;
-  font-size: 10px;
+  font-size: 12px;
   padding-top: 5px;
 }
 
@@ -449,7 +449,7 @@ section {
   color: #737373;
   width: 600px;
   margin: 0 auto;
-  padding-bottom: 100px;
+  padding-bottom: 75px;
 }
 
 .audioText {
