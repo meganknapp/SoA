@@ -566,6 +566,21 @@ section {
   position: absolute;
 }
 
+.controls-arrow {
+  margin-bottom: 40vh;
+}
+
+.reveal .controls .navigate-right {
+  margin-right: 10px;
+}
+
+ .reveal .controls .navigate-left {
+  right: 0em;
+  bottom: 8.2em;
+  -webkit-transform: translateX(-10px);
+  transform: translateX(-10px);
+}
+
 /* ---------------------------------------------------
     COMMUNITY PAGE STYLES
 ----------------------------------------------------- */
@@ -654,6 +669,15 @@ section {
 /* ---------------------------------------------------
     MEDIA QUEUES
 ----------------------------------------------------- */
+
+@media (min-width: 1400px){
+.col-xl-4 {
+    -ms-flex: 0 0 33.33%;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+
+
 @media screen and (max-width: 1040px) {
 .audioPortrait {
   width: 100px;
