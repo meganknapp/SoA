@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Intentional Communities | Soul of Athens</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Intentional Living Communities">
+  <meta name="keywords" content="Soul of Athens, Intentional Living, Intentional Communities">
+  <meta name="author" content="Megan Knapp">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap Stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Reveal Stylesheet -->
+  <!-- <link rel="stylesheet" href="assets/css/reveal.css"> -->
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,700&display=swap" rel="stylesheet">
+  <!-- FontAwesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous">
+  </script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">
+  </script>
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+  <!-- Mapbox Stuff -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css" rel="stylesheet" />
+  <!-- Close MapBox -->
+
+
+</head>
+
+<body>
+
+  <div id="navigation">
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="blackLocustCollective.html">I. Black Locust Collective</a>
+        <a href="currents.html">II. Currents</a>
+        <a href="subamuh.html">III. Subamah</a>
+      </div> <!-- close overlay-content -->
+    </div> <!-- close myNav -->
+    <div class="hamburgerBg" data-aos="fade-up" data-aos-duration="1000"> <span class="hamburger" onclick="openNav()">&#9776;</span> </div><!-- close hamburger -->
+    <a href="index.html">
+      <div><img data-aos="fade-up" data-aos-duration="1000" class="logo" src="assets/img/logo-circle.svg"></div>
+    </a> <!-- close logo -->
+  </div> <!-- close navigation -->
+
+  <section id="landingVid">
+    <div class="videoOpacity">
+      <div class="video">
+        <video autoplay muted loop id="myVideo">
+          <source src="assets/video/introVideo.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <div class="container-fluid landing">
+      <div class="row">
+        <div class="col-sm-12 text-center introText">
+          <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Intentional<br>Communities</h1>
+          <br>
+          <p class="subhed" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">Making a family of likeminded strangers.</p>
+        </div> <!-- close introText -->
+        <a href="#" class="scrollDown">
+          <div class="mouse" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" data-aos-anchor-placement="top-bottom">
+            <div class="mouse-icon">
+              <span class="mouse-wheel"></span>
+            </div> <!-- close mouse-icon -->
+          </div> <!-- close mouse -->
+        </a> <!-- close a scrollDown -->
+      </div> <!-- close row -->
+      <div class="topLine" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom"></div>
+      <div class="bottomLine"></div>
+    </div> <!-- close container-fluid/landing -->
+  </section> <!-- close landingVid -->
+
+
+
+  <section id="definition">
+    <div class="container info">
+      <div class="row">
+        <div class="col-sm-1 col-md-2 col-lg-2"></div>
+        <div class="col-sm-10 col-md-8 col-lg-8 text-center">
+          <p class="definition text-left">in·ten·tion·al com·mu·ni·ty</p>
+          <p class="phonics text-right"><b>noun</b>/ inˈten(t)SH(ə)n(ə)l kəˈmyo͞onədē/</p>
+        </div>
+        <div class="col-sm-1 col-md-2 col-lg-2"></div>
+      </div> <!-- close row -->
+
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <p class="definitionText">A group of people who live together or share common facilities and who regularly
+            associate with each other on the basis of explicit common values.</p>
+        </div>
+      </div> <!-- close row -->
+
+      <div class="row">
+
+        <div class='col-sx-12 col-sm-12 col-md-12 text-center pad'>
+          <img src="assets/img/sashaAudioPortrait.png" class="img-fluid audioPortrait" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+          <img src="assets/img/badgerAudioPortrait.png" class="img-fluid audioPortrait" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
+          <img src="assets/img/martyAudioPortrait.png" class="img-fluid audioPortrait" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true">
+          <img src="assets/img/eddieAudioPortrait.png" class="img-fluid audioPortrait" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600" data-aos-once="true">
+        </div>
+
+      </div> <!-- close row -->
+
+
+      <div class="row" style="padding: 0px;">
+        <div class="col-sm-12 text-center">
+          <p class="text-center">Listen to four members of intentional communities describe what their
+            community means to them.<p>
+              <div class="audioPlay text-center">
+                <audio controls>
+                  <source src="assets/audio/homeAudio.wav" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div> <!-- close audioPlay -->
+        </div>
+      </div>
+      <!--- close row --->
+    </div> <!-- close container -->
+  </section> <!-- close definition -->
+
+
+  <section id="maprow">
+    <div class="container maprow">
+      <div class="row">
+
+        <!-- Mapbox stuff -->
+        <div class="col-sm-12 col-md-12 col-lg-6 text-left">
+          <div id="map"></div>
+          <p class="pcut">Click on a location to learn more about it.</p>
+        </div>
+        <!-- Close Mapbox stuff -->
+
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <div class="bar"></div>
+          <br>
+          <p>Science tells us that human beings are, by nature, cooperative. Experience tells us that living together
+            can be complicated. </p>
+          <p>As humans have evolved, so has our need for community. Banding together has helped our species survive.
+            Regardless of its name&mdash; commune, moshav, eco&mdash;village, kibbutz, co&mdash;housing or intentional community&mdash;
+            outsiders generally view alternative living situations with suspicion or misunderstanding. </p>
+          <p>In Athens, a progressive college town in the rural hills of Southeast Ohio, the tradition of creating community
+            continues to thrive. Whether drawn together by ideology or pragmatism, the practice of strangers living
+            together in intentional communities’ flourishes in many rural and semi&mdash;rural spaces. There is a symbiotic
+            relationship between the needs and makeup of local towns and the skills of the community members. </p>
+          <p>We’ve focused on three intentional communities that illustrate how these alternative societies begin the
+            challenges they face, how they can flourish, and how they sometimes cease to exist. </p>
+        </div> <!-- close col-sm-12 col-md-6 -->
+      </div> <!-- close row -->
+    </div> <!-- close container map -->
+  </section> <!-- close map -->
+
+  <!-- THESE ARE BOOTSTRAP STYLES FOR EMBEDDING IFRAMES, ETC. Can be found on bootstrap documentation--->
+  <!-- Note: style the slideshow through that html file/css... in this case, index-ss.html -->
+  <!-- Style how that html file is embedded in this document... so how many columns, etc. -->
+  <div class="embed-responsive embed-responsive-16by9 reveal-resize">
+    <iframe src="index-ss.html">
+      <!-- PUT THIS INTO SEPARATE HTML FILE
+      <div class="reveal">
+        <div class="slides">
+          <section>Black Locust Farms</section>
+          <section>Currents</section>
+          <section>Subamah</section>
+        </div>
+      </div>
+        -->
+      <!--- INSTEAD, LINK THE SOURCE OF THE HTML/REVEAL SLIDESHOW ------->
+    </iframe>
+  </div> <!-- close .embed-responsive -->
+
+
+
+  <!-- jQuery CDN - Slim version (=without AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+  </script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+  </script>
+
+
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+
+
+
+  <!-- MAPBOX SCRIPTS BELLOW -->
+  <script>
+    mapboxgl.accessToken =
+      'pk.eyJ1Ijoicnlhbi12YWxsZXR0ZSIsImEiOiJjazZnbXN3ODkybDBjM21vYmQ1cGxiMjd5In0.VolIXH3LNtJjz9SgF_LpaQ';
+
+    // Set bounds to New York, New York
+    var bounds = [
+      [-85.8565, 38.2151], // Southwest coordinates
+      [-80.0538, 42.574] // Northeast coordinates
+    ];
+
+
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/ryan-vallette/ck8ad8hxf0y3x1inz47q5pzj2',
+      center: [-82.733, 40.196],
+      zoom: 6.15,
+      maxBounds: bounds, // Sets bounds as max
+      hash: true,
+    });
+
+    // Add zoom and rotation controls to the map.
+    map.addControl(new mapboxgl.NavigationControl());
+
+
+    map.on('load', function() {
+      map.addSource('places', {
+        'type': 'geojson',
+        'data': {
+          'type': 'FeatureCollection',
+          'features': [{
+              'type': 'Feature',
+              'properties': {
+                'description': '<strong class="mapheader">Black Locust</strong><p class="maptext">An 7-year-old community founded on the principle of anarchy and social justice.</p>',
+                'icon': 'farm'
+
+              },
+              'geometry': {
+                'type': 'Point',
+                'coordinates': [-82.115800, 39.175340]
+              }
+            },
+            {
+              'type': 'Feature',
+              'properties': {
+                'description': '<strong class="mapheader">Currents</strong><p class="maptext">An 39-year-old community founded on the principle of cooperation and social activism.</p>',
+                'icon': 'farm'
+              },
+              'geometry': {
+                'type': 'Point',
+                'coordinates': [-82.055090, 39.454510]
+              }
+            },
+            {
+              'type': 'Feature',
+              'properties': {
+                'description': '<strong class="mapheader">Subamuh</strong><p class="maptext">An 41-year-old community founded on the principle of feminism.</p>',
+                'icon': 'farm'
+              },
+              'geometry': {
+                'type': 'Point',
+                'coordinates': [-82.031480, 39.420660]
+              }
+            }
+          ]
+        }
+      });
+
+      // Add a layer showing the places.
+      map.addLayer({
+        'id': 'places',
+        'type': 'symbol',
+        'source': 'places',
+        'layout': {
+          'icon-image': '{icon}-15',
+          'icon-size': 1.25,
+          'icon-allow-overlap': true
+        },
+        "paint": {
+          "icon-color": "#ff0000",
+        }
+      });
+
+      // When a click event occurs on a feature in the places layer, open a popup at the
+      // location of the feature, with description HTML from its properties.
+      map.on('click', 'places', function(e) {
+        var coordinates = e.features[0].geometry.coordinates.slice();
+        var description = e.features[0].properties.description;
+
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+          coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+
+        new mapboxgl.Popup()
+          .setLngLat(coordinates)
+          .setHTML(description)
+          .addTo(map);
+      });
+
+      // Change the cursor to a pointer when the mouse is over the places layer.
+      map.on('mouseenter', 'places', function() {
+        map.getCanvas().style.cursor = 'pointer';
+      });
+
+      // Change it back to a pointer when it leaves.
+      map.on('mouseleave', 'places', function() {
+        map.getCanvas().style.cursor = '';
+      });
+    });
+  </script>
+  <!-- End mapbox scripps -->
+
+  <!-- NavBar Sidebar -->
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+  </script>
+
+
+</body>
+
+</html>

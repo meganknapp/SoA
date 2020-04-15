@@ -1,0 +1,881 @@
+/* ---------------------------------------------------
+    UNIVERSAL STYLES
+----------------------------------------------------- */
+body {
+  background-color: #d6d0c6;
+  background-image: url("http://www.transparenttextures.com/patterns/concrete-wall.png");
+  color: #101010;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 80px;
+  color: #D6D0C6;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 60px;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24 px;
+  padding-bottom: 20px;
+}
+
+.subhed {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+a:link {
+  color: #FFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #CC8126;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #D6D0C6;
+  text-decoration: none;
+}
+
+a:active {
+  color: #59604F;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 80vw;
+}
+
+.row {
+  padding-bottom: 40px;
+}
+
+.pcut {
+  font-weight: lighter;
+  font-style: normal;
+  font-size: 10px;
+  padding-top: 5px;
+}
+
+.btn {
+  border-radius: 50px;
+  border: 3px solid #D6D0C6;
+  overflow: hidden;
+  color: #D6D0C6;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.ssbtn {
+  border-radius: 50px;
+  border: 3px solid #D6D0C6;
+  color: #D6D0C6;
+  background-color: transparent;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 14px 10px 14px;
+}
+
+.ssbtn:hover {
+  background-color: #D6D0C6;
+  color: #000;
+}
+
+.btn:hover {
+  background-color: #D6D0C6;
+  color: #000;
+}
+
+.round-button:hover {
+  color: #2C3415;
+  text-decoration: none;
+}
+
+
+footer {
+  background-color: #3D3522;
+  color: #D6D0C6;
+  font-size: 12px;
+}
+
+footer a {
+  color: #D6D0C6 !important;
+}
+
+footer a:hover {
+  color: #CC8126 !important;
+}
+
+footer p {
+  margin-bottom: 8px;
+}
+
+section {
+  padding-bottom: 60px;
+}
+
+.photo {
+  width: 50%;
+}
+
+.photoLarge {
+  width: 60%;
+}
+
+.photoLeft {
+  width: 100%;
+  padding: 0px 20px 20px 0px;
+}
+
+.photoRight {
+  width: 100%;
+  padding: 0px 0px 20px 20px;
+}
+
+/* ---------------------------------------------------
+    NAV STYLE
+----------------------------------------------------- */
+.logo {
+  position: fixed;
+  top: 27px;
+  left: 20px;
+  margin: 8px;
+  width: auto;
+  height: 80px;
+  z-index: 300;
+}
+
+.hamburger {
+  position: fixed;
+  top: 36px;
+  right: 46px;
+  font-size: 36px;
+  padding: 8px;
+  color: black;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.hamburgerBg {
+  position: fixed;
+  top: 39px;
+  right: 38px;
+  font-size: 36px;
+  padding: 8px;
+  background-color: #D6D0C6;
+  border-radius: 100px;
+  height: 65px;
+  width: 65px;
+  cursor: pointer;
+  z-index: 100;
+
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #2C3415;
+  background-image: url("http://www.transparenttextures.com/patterns/concrete-wall.png");
+  overflow-y: hidden;
+  transition: 0.5s;
+  z-index: 200;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  z-index: 200;
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  color: #D6D0C6;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #D6D0C6;
+  display: block;
+  transition: 0.3s;
+  z-index: 200;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  font-weight: bolder;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  z-index: 200;
+}
+
+/* ---------------------------------------------------
+    LANDING STYLE
+----------------------------------------------------- */
+
+#landingVid {
+  height: 100vh;
+  min-height: 500px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.20),
+      rgba(0, 0, 0, 0.70));
+}
+
+.video video {
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -999;
+  background-position: center;
+
+}
+
+#blcLandingImg {
+  border-radius: 0px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)),
+    url("../img/fireBlackLocust.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  min-height: 500px;
+}
+
+#currentsLandingImg {
+  border-radius: 0px;
+  background:
+    url("../img/cookingCurrents.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  min-height: 500px;
+}
+
+#sumbamuhLandingImg {
+  border-radius: 0px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)),
+    url("../img/layingInGrassSubamah.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  min-height: 500px;
+}
+
+
+
+/* -------------- Definition ----------------- */
+
+#definition {
+  background-color: #d6d0c6;
+  background-image: url("http://www.transparenttextures.com/patterns/concrete-wall.png");
+}
+
+.introText {
+  top: 180px;
+  color: #D6D0C6;
+}
+
+.introText2 {
+  top: 220px;
+  color: #D6D0C6;
+}
+
+.mouse {
+  margin: 50px auto;
+  width: 100px;
+  position: absolute;
+  bottom: 60px;
+  left: calc(50% - 14px);
+}
+
+.mouse-icon {
+  width: 25px;
+  height: 45px;
+  border: 2px solid #D6D0C6;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+}
+
+.mouse-wheel {
+  height: 5px;
+  margin: 2px auto 0;
+  display: block;
+  width: 5px;
+  background-color: #D6D0C6;
+  border-radius: 50%;
+  -webkit-animation: 2s ease infinite wheel-up-down;
+  -moz-animation: 2s ease infinite wheel-up-down;
+  animation: 2s ease infinite wheel-up-down;
+  animation-delay: .3s;
+}
+
+@-webkit-keyframes wheel-up-down {
+  0% {
+    margin-top: 2px;
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  100% {
+    margin-top: 30px;
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes wheel-up-down {
+  0% {
+    margin-top: 2px;
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  100% {
+    margin-top: 30px;
+    opacity: 0;
+  }
+}
+
+@keyframes wheel-up-down {
+  0% {
+    margin-top: 2px;
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  100% {
+    margin-top: 30px;
+    opacity: 0;
+  }
+}
+
+.topLine {
+  width: 1px;
+  position: absolute;
+  background-color: #D6D0C6;
+  height: 80px;
+  bottom: 0;
+  left: calc(50% - 2.5px);
+}
+
+.bottomLine {
+  width: 1px;
+  position: absolute;
+  background-color: #000;
+  height: 80px;
+  top: 100vh;
+  left: calc(50% - 2.5px);
+}
+
+.info {
+  padding: 200px 0px 180px 0px;
+}
+
+.definition {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 0px;
+}
+
+.phonics {
+  font-style: normal;
+  font-size: 20px;
+  color: #737373;
+  margin: 0;
+}
+
+.definitionText {
+  width: 600px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+
+.audioText {
+  color: #000;
+}
+
+.Portrait {
+  width: 60%;
+}
+
+.audioPortrait {
+  width: 125px;
+  margin: 0px 40px 0px 40px;
+  box-sizing: border-box;
+}
+
+
+/* -------------- Map ----------------- */
+
+.bar {
+  background-color: #D6D0C6;
+  width: 120px;
+  height: 6px;
+}
+
+#map {
+  width: 100%;
+  height: 500px;
+}
+
+.mapboxgl-popup {
+  max-width: 400px;
+  /* background-color: #CA4A41; */
+}
+
+.mapheader {
+  color: #2C3415;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+}
+
+.maptext {
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+#maprow {
+  background-color: #2C3415;
+}
+
+.maprow {
+  color: #D6D0C6;
+  padding: 80px;
+}
+
+/* -------------- Reveal ----------------- */
+
+.timeline {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  color: #F0ECE1;
+  text-transform: uppercase;
+}
+
+.pf {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+}
+
+.slideHeading {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 80px;
+  color: #F0ECE1;
+}
+
+.about {
+  font-family: 'Lato', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #F0ECE1;
+}
+
+.reveal {
+  background-color: #D6D0C6;
+}
+
+.reveal .controls .navigate-left,
+.reveal .controls .navigate-right {
+  color: #F0ECE1;
+}
+
+.reveal-resize {
+  height: 100vh;
+}
+
+.ssCredit {
+  font-weight: lighter;
+  font-style: normal;
+  font-size: 12px;
+  bottom: 0;
+  left:0;
+  color: #D6D0C6;
+  position: absolute;
+}
+
+/* ---------------------------------------------------
+    COMMUNITY PAGE STYLES
+----------------------------------------------------- */
+
+.pullQuote {
+  padding: 40px 0px 40px 0px;
+  font-size: 35px;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  color: #3D3522;
+}
+
+.pqCredit {
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  color: #3D3522;
+  font-style: italic;
+}
+
+.jumbotron {
+  border-radius: 0px;
+  background:
+    /* linear-gradient(rgba(107, 93, 72, 0.15),
+      rgba(60, 53, 34, 0.85)), */
+    url("../img/fireBlackLocust.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  background-position: center;
+}
+
+.jumbotron.currents {
+  border-radius: 0px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url("../img/girlDrill.jpg");
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  color: #D6D0C6 !important;
+  width: auto;
+  height: 100vh;
+  background-position: center;
+}
+
+.jumbotron.subamuh {
+  border-radius: 0px;
+  background:
+    /* linear-gradient(rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.5)), */
+    url("../img/chalkboard.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  background-position: center;
+}
+
+.jumbotronText {
+  text-align: left;
+}
+
+.jumbotronText {
+  text-align: left;
+}
+
+.jumbotronTextH3 {
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.nextCommunity {
+  width: 100%;
+  background-color: #6B5D48;
+  color: #D6D0C6;
+  padding: 30px;
+}
+
+
+
+
+
+/* ---------------------------------------------------
+    MEDIA QUEUES
+----------------------------------------------------- */
+@media screen and (max-width: 1040px) {
+.audioPortrait {
+  width: 100px;
+  margin: 0px 30px 0px 30px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 816px) {
+.audioPortrait {
+  width: 80px;
+  margin: 0px 18px 0px 18px;
+  box-sizing: border-box;
+}
+/* ---------------------------------------------------
+    MEDIA QUEUES 767px
+----------------------------------------------------- */
+
+@media screen and (max-width: 767px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  .photo {
+    width: 100%;
+  }
+
+  .photoLarge {
+    width: 100%;
+  }
+
+  .photoLeft {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .photoRight {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .row {
+    margin: 0px;
+  }
+
+  .definition {
+    font-size: 35px;
+  }
+
+  .phonics {
+    font-size: 16px;
+  }
+
+  .definitionText {
+    width: 400px;
+  }
+
+  .audioPortrait {
+    width: 80px;
+    margin: 0px 18px 0px 18px;
+    box-sizing: border-box;
+  }
+
+  .maprow {
+    padding: 10px;
+    padding-top: 40px;
+  }
+
+  .slides {
+    box-sizing: border-box;
+    padding: 0px;
+  }
+
+  .timeline {
+    font-size: 20px;
+  }
+
+
+
+  .slideHeading {
+    font-size: 80px;
+  }
+
+  .about {
+    font-size: 20px;
+  }
+
+  .ssbtn {
+    font-size: 22px;
+    padding: 20px;
+    font-weight: bold;
+  }
+
+  .btn {
+    border-radius: 50px;
+    border: 3px solid #D6D0C6;
+    color: #D6D0C6;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+  }
+
+
+  .communityName {
+    font-size: 48px;
+  }
+
+
+}
+
+/* ---------------------------------------------------
+    MEDIA QUEUES 575px
+----------------------------------------------------- */
+
+@media screen and (max-width: 633px) {
+  .audioPortrait {
+    width: 80px;
+    margin: 0px 12px 0px 12px;
+    box-sizing: border-box;
+  }
+
+  .pullQuote {
+    font-size: 28px;
+  }
+
+  .timeline {
+    font-size: 25px;
+  }
+
+  .slideHeading {
+    font-size: 85px;
+  }
+
+  .about {
+    font-size: 25px;
+  }
+
+  .ssbtn {
+    font-size: 27px;
+    padding: 25px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .audioPortrait {
+    width: 110px;
+    margin: 0px 18px 16px 18px;
+    box-sizing: border-box;
+  }
+
+  .timeline {
+    font-size: 30px;
+    padding-bottom:10px;
+  }
+
+  .slideHeading {
+    font-size: 95px;
+    padding-bottom:10px;
+
+  }
+
+  .about {
+    font-size: 32px;
+    padding-bottom:10px;
+
+  }
+
+  .ssbtn {
+    font-size: 30px;
+    padding: 25px;
+    font-weight: bold;
+  }
+}
+
+
+/* ---------------------------------------------------
+    MEDIA QUEUES 450px
+----------------------------------------------------- */
+
+@media screen and (max-height: 450px) {
+  .overlay {
+    overflow-y: auto;
+  }
+
+  .overlay a {
+    font-size: 20px
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  .introText {
+    top: 244px;
+  }
+
+  .definitionText {
+    width: 300px;
+  }
+
+  .timeline {
+    font-size: 35px;
+  }
+
+  .slideHeading {
+    font-size: 95px;
+  }
+
+  .about {
+    font-size: 35px;
+  }
+
+  .ssbtn {
+    font-size: 37px;
+    padding: 25px;
+    font-weight: bold;
+  }
+}
