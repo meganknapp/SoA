@@ -11,6 +11,14 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+.container {
+  border: 5px solid red;
+  max-width: 1020px !important;
+}
+
+section {
+   border: 5px dotted green;
+ }
 
 h1 {
   font-family: 'Playfair Display', serif;
@@ -589,6 +597,10 @@ section {
     COMMUNITY PAGE STYLES
 ----------------------------------------------------- */
 
+#top {
+  padding-top: 140px;
+}
+
 .pullQuote {
   padding: 40px 0px 40px 0px;
   font-size: 35px;
@@ -674,14 +686,6 @@ section {
     MEDIA QUEUES
 ----------------------------------------------------- */
 
-@media (min-width: 1400px){
-.col-xl-4 {
-    -ms-flex: 0 0 33.33%;
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-}
-
-
 @media screen and (max-width: 1040px) {
 .audioPortrait {
   width: 100px;
@@ -695,9 +699,6 @@ section {
   margin: 0px 18px 0px 18px;
   box-sizing: border-box;
 }
-/* ---------------------------------------------------
-    MEDIA QUEUES 767px
------------------------------------------------------ */
 
 @media screen and (max-width: 767px) {
 
