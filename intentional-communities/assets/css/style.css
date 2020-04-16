@@ -471,6 +471,10 @@ section {
   box-sizing: border-box;
 }
 
+.audioPortrait:hover{
+  box-shadow: 0 0 25px rgba(33,33,33,.8);
+  border-radius: 100px;
+}
 
 /* -------------- Map ----------------- */
 
