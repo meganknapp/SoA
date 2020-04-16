@@ -12,13 +12,9 @@ body {
   overflow-x: hidden;
 }
 .container {
-  border: 5px solid red;
   max-width: 1020px !important;
 }
 
-section {
-   border: 5px dotted green;
- }
 
 h1 {
   font-family: 'Playfair Display', serif;
