@@ -738,11 +738,11 @@ section {
   }
 
   .definitionText {
-    width: 400px;
+    width: 65vw;
   }
 
   .audioText {
-    width: 400px;
+    width: 65vw;
   }
 
   .audioPortrait {
@@ -834,8 +834,8 @@ section {
 
 @media screen and (max-width: 576px) {
   .audioPortrait {
-    width: 110px;
-    margin: 0px 18px 16px 18px;
+    width: 100px;
+    margin: 0px 10px 16px 10px;
     box-sizing: border-box;
   }
 
@@ -890,15 +890,15 @@ section {
   }
 
   .introText {
-    top: 244px;
+    top: 175px;
   }
 
   .definitionText {
-    width: 300px;
+    width: 65vw;
   }
 
   .audioText {
-    width: 300px;
+    width: 65vw;
   }
 
   .timeline {
