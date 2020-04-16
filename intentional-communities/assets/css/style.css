@@ -322,7 +322,7 @@ section {
 }
 
 .introText {
-  top: 180px;
+  top: 130px;
   color: #D6D0C6;
 }
 
@@ -330,6 +330,8 @@ section {
   top: 220px;
   color: #D6D0C6;
 }
+
+
 
 .mouse {
   margin: 50px auto;
@@ -565,18 +567,8 @@ section {
   height: 100vh;
 }
 
-.ssCredit {
-  font-weight: lighter;
-  font-style: normal;
-  font-size: 12px;
-  bottom: 0;
-  left:0;
-  color: #D6D0C6;
-  position: absolute;
-}
-
 .controls-arrow {
-  margin-bottom: 40vh;
+  margin-bottom: 8vh;
 }
 
 .reveal .controls .navigate-right {
@@ -589,6 +581,27 @@ section {
   -webkit-transform: translateX(-10px);
   transform: translateX(-10px);
 }
+
+.copyright {
+  margin-bottom: 1vh;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  color: #D6D0C6;
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+}
+
+.ssCredit {
+  margin-bottom: 1vh;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  color: #D6D0C6;
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+}
+
 
 /* ---------------------------------------------------
     COMMUNITY PAGE STYLES
@@ -707,6 +720,10 @@ section {
     font-size: 60px;
   }
 
+  .subhed {
+      font-size: 16px;
+  }
+
   .photo {
     width: 100%;
   }
@@ -761,6 +778,21 @@ section {
     padding: 0px;
   }
 
+  #blackLocustFarms {
+    padding: 80px;
+    box-sizing: border-box;
+  }
+
+  #currents {
+    padding: 80px;
+    box-sizing: border-box;
+  }
+
+  #subamuh {
+    padding: 80px;
+    box-sizing: border-box;
+  }
+
   .timeline {
     font-size: 20px;
   }
@@ -791,11 +823,6 @@ section {
   }
 
 
-  .communityName {
-    font-size: 48px;
-  }
-
-
 }
 
 /* ---------------------------------------------------
@@ -803,6 +830,48 @@ section {
 ----------------------------------------------------- */
 
 @media screen and (max-width: 633px) {
+
+  #blcLandingImg {
+    border-radius: 0px;
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)),
+      url("../img/fireBlackLocust.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    height: 100vh;
+    min-height: 500px;
+  }
+
+  #currentsLandingImg {
+    border-radius: 0px;
+    background:
+      url("../img/cookingCurrents.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    height: 100vh;
+    min-height: 500px;
+  }
+
+  #sumbamuhLandingImg {
+    border-radius: 0px;
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)),
+      url("../img/layingInGrassSubamah.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100;
+    background-position: center;
+    height: 100vh;
+    min-height: 500px;
+  }
+
+
   .audioPortrait {
     width: 80px;
     margin: 0px 12px 0px 12px;
@@ -886,11 +955,15 @@ section {
 
 @media screen and (max-width: 450px) {
   h1 {
-    font-size: 50px;
+    font-size: 45px;
   }
 
   .introText {
-    top: 175px;
+    top: 150px;
+  }
+
+  .introText2 {
+    top: 190px;
   }
 
   .definitionText {
