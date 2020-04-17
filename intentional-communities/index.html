@@ -114,28 +114,33 @@
         </div>
       </div>
 
-      <div class="row" style="padding-bottom: 100px;"> <!-- AudioPortraits -->
+      <div class="row" style="padding-bottom: 100px;">
+        <!-- AudioPortraits -->
         <div class='col-sx-12 col-sm-12 col-md-12 text-center pad'>
 
           <audio id="sasha">
             <source src="assets/audio/sasha.mp3" type="audio/ogg" />
           </audio>
-          <img id="sasha" src="assets/img/sashaAudioPortrait.png" class="img-fluid audioPortrait" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true" onClick="togglePlay()" />
+          <img id="sasha" src="assets/img/sashaAudioPortrait.png" class="img-fluid audioPortrait" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true" onClick="sashaPlay()">
+          <!-- <div class="playpause">
+            <input type="checkbox" value="None" id="playpause" name="check" />
+            <label for="playpause"></label>
+          </div> -->
 
           <audio id="badger">
             <source src="assets/audio/badger.mp3" type="audio/ogg" />
           </audio>
-          <img id="badger" src="assets/img/badgerAudioPortrait.png" class="img-fluid audioPortrait" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" onClick="togglePlay()">
+          <img id="badger" src="assets/img/badgerAudioPortrait.png" class="img-fluid audioPortrait" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" onClick="badgerPlay()">
 
           <audio id="marty">
             <source src="assets/audio/marty.mp3" type="audio/ogg" />
           </audio>
-          <img id="marty" src="assets/img/martyAudioPortrait.png" class="img-fluid audioPortrait" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" onClick="togglePlay()">
+          <img id="marty" src="assets/img/martyAudioPortrait.png" class="img-fluid audioPortrait" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" onClick="martyPlay()">
 
           <audio id="eddie">
             <source src="assets/audio/eddie.mp3" type="audio/ogg" />
           </audio>
-          <img id="eddie" src="assets/img/eddieAudioPortrait.png" class="img-fluid audioPortrait" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600" data-aos-once="true" onClick="togglePlay()">
+          <img id="eddie" src="assets/img/eddieAudioPortrait.png" class="img-fluid audioPortrait" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600" data-aos-once="true" onClick="eddiePlay()">
 
         </div>
       </div> <!-- close AudioPortraits -->
@@ -147,7 +152,9 @@
           </div>
         </div>
       </div>
+
   </section>
+
 
 
   <section id="maprow">
@@ -203,11 +210,12 @@
 
 
   <!-- AUDIO SCRIPTS -->
+
   <script>
     var sasha = document.getElementById("sasha");
     var isPlaying = false;
 
-    function togglePlay() {
+    function sashaPlay() {
       if (isPlaying) {
         sasha.pause()
       } else {
@@ -226,7 +234,7 @@
     var badger = document.getElementById("badger");
     var isPlaying = false;
 
-    function togglePlay() {
+    function badgerPlay() {
       if (isPlaying) {
         badger.pause()
       } else {
@@ -245,7 +253,7 @@
     var marty = document.getElementById("marty");
     var isPlaying = false;
 
-    function togglePlay() {
+    function martyPlay() {
       if (isPlaying) {
         marty.pause()
       } else {
@@ -264,7 +272,7 @@
     var eddie = document.getElementById("eddie");
     var isPlaying = false;
 
-    function togglePlay() {
+    function eddiePlay() {
       if (isPlaying) {
         eddie.pause()
       } else {
@@ -299,7 +307,7 @@
     var map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/ryan-vallette/ck8ad8hxf0y3x1inz47q5pzj2',
-      center: [39.778 / -82.442],
+      center: [39.804 / -82.551],
       zoom: 7.4,
       maxBounds: bounds, // Sets bounds as max
       hash: true,
