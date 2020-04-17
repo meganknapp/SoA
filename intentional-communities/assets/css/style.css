@@ -688,9 +688,41 @@ section {
   padding: 30px;
 }
 
+.end-story {
+  font-family: 'Playfair Display', serif;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 24px;
+text-align: center;
+color: #6B5D48;
+}
 
+.end-line {
+  border: 2px solid #898784;
+}
 
+.btn-next {
+  border: 3px solid #898784;
+  margin-top: 10px;
+}
 
+.btn-next:hover {
+  border: 3px solid #898784;
+  background-color: #898784;
+}
+
+.btn-next:hover p {
+  color: #fff;
+}
+
+.btn-next p {
+  color: #898784;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
 
 /* ---------------------------------------------------
     MEDIA QUEUES
@@ -931,6 +963,8 @@ section {
     font-weight: bold;
   }
 }
+
+
 
 
 /* ---------------------------------------------------
