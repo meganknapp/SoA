@@ -757,12 +757,13 @@ color: #6B5D48;
 }
 
 .end-line {
-  border: 2px solid #74716d;
+  border: 2px solid #3D3522;
 }
 
 .btn-next {
   border: 3px solid #2c3415;
   margin-top: 10px;
+  border-radius: 100px;
 }
 
 .btn-next:hover {
