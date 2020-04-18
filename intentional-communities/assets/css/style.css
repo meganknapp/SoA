@@ -11,6 +11,7 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+
 .container {
   max-width: 1020px !important;
   width: 80vw !important;
@@ -36,16 +37,18 @@ h3 {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 24 px;
+  font-size: 35px;
   padding-bottom: 20px;
+  color: #2c3415;
 }
 
 .subhed {
-  font-weight: 700;
+  font-weight: bold;
   font-style: normal;
-  font-size: 20px;
+  font-size: 18px;
+  width: 475px;
+  margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
-
 }
 
 a:link {
@@ -90,6 +93,27 @@ a:active {
   color: #D6D0C6;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+}
+
+.ssbtn {
+  border: 3px solid #2c3415;
+  margin-top: 10px;
+}
+
+.ssbtn:hover {
+  border: 3px solid #CC8126;
+  background-color: #CC8126;
+}
+
+.ssbtn:hover p {
+  color: #fff;
+}
+
+.ssbtn p {
+  color: #2c3415;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .ssbtn {
@@ -152,12 +176,12 @@ section {
 
 .photoLeft {
   width: 100%;
-  padding: 0px 20px 20px 0px;
+  padding: 0px 20px 0px 0px;
 }
 
 .photoRight {
   width: 100%;
-  padding: 0px 0px 20px 20px;
+  padding: 0px 0px 0px 20px;
 }
 
 /* ---------------------------------------------------
@@ -266,7 +290,6 @@ section {
   top: 0;
   z-index: -999;
   background-position: center;
-
 }
 
 #blcLandingImg {
@@ -656,10 +679,10 @@ label{
 
 .pullQuote {
   padding: 40px 0px 40px 0px;
-  font-size: 35px;
+  font-size: 30px;
   font-family: 'Playfair Display', serif;
   font-weight: bold;
-  color: #3D3522;
+  color: #3d3522;
 }
 
 .pqCredit {
@@ -732,7 +755,7 @@ label{
 }
 
 .end-story {
-  font-family: 'Playfair Display', serif;
+font-family: 'Playfair Display', serif;
 font-style: normal;
 font-weight: bold;
 font-size: 18px;
@@ -742,17 +765,17 @@ color: #6B5D48;
 }
 
 .end-line {
-  border: 2px solid #898784;
+  border: 2px solid #74716d;
 }
 
 .btn-next {
-  border: 3px solid #898784;
+  border: 3px solid #2c3415;
   margin-top: 10px;
 }
 
 .btn-next:hover {
-  border: 3px solid #898784;
-  background-color: #898784;
+  border: 3px solid #CC8126;
+  background-color: #CC8126;
 }
 
 .btn-next:hover p {
@@ -760,11 +783,22 @@ color: #6B5D48;
 }
 
 .btn-next p {
-  color: #898784;
+  color: #2c3415;
   margin: 0;
   padding-left: 10px;
   padding-right: 10px;
+}
 
+.videoText {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+  width: 340px;
+  color: #6B5D48;
+  padding: 13px 0px 10px 110px;
 }
 
 /* ---------------------------------------------------
@@ -796,7 +830,8 @@ color: #6B5D48;
   }
 
   .subhed {
-      font-size: 16px;
+    font-size: 14px;
+    width: 300px;
   }
 
   .photo {
@@ -896,7 +931,6 @@ color: #6B5D48;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
   }
-
 
 }
 
