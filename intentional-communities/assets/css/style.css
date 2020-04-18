@@ -86,41 +86,11 @@ a:active {
   padding-top: 5px;
 }
 
-.btn {
-  border-radius: 50px;
-  border: 3px solid #D6D0C6;
-  overflow: hidden;
-  color: #D6D0C6;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-}
-
-.ssbtn {
-  border: 3px solid #2c3415;
-  margin-top: 10px;
-}
-
-.ssbtn:hover {
-  border: 3px solid #CC8126;
-  background-color: #CC8126;
-}
-
-.ssbtn:hover p {
-  color: #fff;
-}
-
-.ssbtn p {
-  color: #2c3415;
-  margin: 0;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 .ssbtn {
   border-radius: 50px;
-  border: 3px solid #D6D0C6;
-  color: #D6D0C6;
-  background-color: transparent;
+  border: 3px solid #2C3415;
+  color: #2C3415;
+  background-color: #D6D0C6;
   overflow: hidden;
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
@@ -129,8 +99,9 @@ a:active {
 }
 
 .ssbtn:hover {
-  background-color: #D6D0C6;
-  color: #000;
+  border: 3px solid #CC8126;
+  color: #D6D0C6;
+  background-color: #CC8126;
 }
 
 .btn:hover {
