@@ -71,10 +71,6 @@ a:active {
   text-decoration: none;
 }
 
-.container {
-  max-width: 80vw;
-}
-
 .row {
   padding-bottom: 40px;
 }
@@ -822,6 +818,10 @@ color: #6B5D48;
     font-size: 60px;
   }
 
+  .container {
+    width: 100% !important;
+]  }
+
   .subhed {
     font-size: 14px;
     width: 300px;
@@ -925,6 +925,11 @@ color: #6B5D48;
     font-size: 16px;
   }
 
+  .videoText {
+    width: 100%;
+  }
+
+
 }
 
 /* ---------------------------------------------------
@@ -1004,6 +1009,14 @@ color: #6B5D48;
 }
 
 @media screen and (max-width: 576px) {
+  .topLine {
+    width: 0px;
+  }
+
+  .bottomLine {
+    width: 0px;
+  }
+
   .audioPortrait {
     width: 100px;
     margin: 0px 10px 16px 10px;
