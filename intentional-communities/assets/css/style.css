@@ -467,7 +467,6 @@ section {
 
 .audioPortrait {
   width: 125px;
-  margin: 0px 40px 0px 40px;
   box-sizing: border-box;
 }
 
@@ -477,7 +476,7 @@ section {
   cursor: pointer;
 }
 
-/* .playpause label {
+.playpause label {
    height: 45px;
    border-color: transparent transparent transparent red;
    transition: 100ms all ease;
@@ -538,7 +537,7 @@ label{
   box-sizing: border-box;
   position: absolute;
   top: 0px;
-} */
+}
 
 /* -------------- Map ----------------- */
 
@@ -797,20 +796,6 @@ color: #6B5D48;
     MEDIA QUEUES
 ----------------------------------------------------- */
 
-@media screen and (max-width: 1040px) {
-.audioPortrait {
-  width: 100px;
-  margin: 0px 30px 0px 30px;
-  box-sizing: border-box;
-}
-
-@media screen and (max-width: 816px) {
-.audioPortrait {
-  width: 80px;
-  margin: 0px 18px 0px 18px;
-  box-sizing: border-box;
-}
-
 @media screen and (max-width: 767px) {
 
   body {
@@ -865,9 +850,12 @@ color: #6B5D48;
   }
 
   .audioPortrait {
-    width: 80px;
-    margin: 0px 18px 0px 18px;
+    width: 200px;
     box-sizing: border-box;
+  }
+
+  .break {
+    padding-bottom: 60px;
   }
 
   .maprow {
@@ -898,8 +886,6 @@ color: #6B5D48;
   .timeline {
     font-size: 20px;
   }
-
-
 
   .slideHeading {
     font-size: 80px;
@@ -932,7 +918,7 @@ color: #6B5D48;
 }
 
 /* ---------------------------------------------------
-    MEDIA QUEUES 575px
+    MEDIA QUEUES 633px
 ----------------------------------------------------- */
 
 @media screen and (max-width: 633px) {
@@ -992,13 +978,6 @@ color: #6B5D48;
     min-height: 500px;
   }
 
-
-  .audioPortrait {
-    width: 80px;
-    margin: 0px 12px 0px 12px;
-    box-sizing: border-box;
-  }
-
   .pullQuote {
     font-size: 28px;
   }
@@ -1032,9 +1011,12 @@ color: #6B5D48;
   }
 
   .audioPortrait {
-    width: 100px;
-    margin: 0px 10px 16px 10px;
+    width: 200px;
     box-sizing: border-box;
+  }
+
+  .break {
+    padding-bottom: 0px;
   }
 
   .timeline {

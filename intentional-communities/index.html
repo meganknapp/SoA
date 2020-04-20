@@ -134,26 +134,86 @@
       </div>
 
       <div class="row" style="padding-bottom: 40px;">
-        <!-- AudioPortraits -->
+        <div class='col-sm-12 col-md-2 text-center pad'></div>
+
+        <div class='col-sm-6 col-md-2 text-center pad'>
+          <audio id="sasha">
+            <source src="assets/audio/sasha.mp3" type="audio/mpeg" />
+          </audio>
+          <img id="sasha" src="assets/img/sashaAudioPortrait.png" class="img-fluid audioPortrait" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true" onClick="sashaPlay()">
+          <p class="text-center break">Sasha Segic <br> <b>Black Locust Farms</b></p>
+          <!-- <div class="playpause" onClick="sashaPlay()">
+            <input type="checkbox" value="None" id="playpause" name="check" />
+            <label for="playpause"></label>
+          </div> -->
+        </div>
+
+        <div class='col-sm-6 col-md-2 text-center pad'>
+          <audio id="badger">
+            <source src="assets/audio/badger.mp3" type="audio/mpeg" />
+          </audio>
+          <img id="badger" src="assets/img/badgerAudioPortrait.png" class="img-fluid audioPortrait" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" onClick="badgerPlay()">
+          <p class="text-center break">Badger Johnson <br> <b>Black Locust Farms</b></p>
+          <!-- <div class="playpause" onClick="sashaPlay()">
+            <input type="checkbox" value="None" id="playpause" name="check" />
+            <label for="playpause"></label>
+          </div> -->
+        </div>
+
+        <div class='col-sm-6 col-md-2 text-center pad'>
+          <audio id="marty">
+            <source src="assets/audio/marty.mp3" type="audio/mpeg" />
+          </audio>
+          <img id="marty" src="assets/img/martyAudioPortrait.png" class="img-fluid audioPortrait" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" onClick="martyPlay()">
+          <p class="text-center">Marty Smith <br> <b>Currents</b></p>
+          <!-- <div class="playpause" onClick="sashaPlay()">
+            <input type="checkbox" value="None" id="playpause" name="check" />
+            <label for="playpause"></label>
+          </div> -->
+        </div>
+
+        <div class='col-sm-6 col-md-2 text-center pad'>
+          <audio id="eddie">
+            <source src="assets/audio/eddie.wav" type="audio/wav" />
+          </audio>
+          <img id="eddie" src="assets/img/eddieAudioPortrait.png" class="img-fluid audioPortrait" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600" data-aos-once="true" onClick="eddiePlay()">
+          <p class="text-center">Eddie Eidde <br> <b>SuBAMUH</b></p>
+          <!-- <div class="playpause" onClick="sashaPlay()">
+            <input type="checkbox" value="None" id="playpause" name="check" />
+            <label for="playpause"></label>
+          </div> -->
+        </div>
+
+        <div class='col-sm-12 col-md-2 text-center pad'></div>
+
+      </div>
+
+
+
+
+
+
+
+      <!-- <div class="row" style="padding-bottom: 40px;">
         <div class='col-sx-12 col-sm-12 col-md-12 text-center pad'>
 
           <audio id="sasha">
             <source src="assets/audio/sasha.mp3" type="audio/mpeg" />
           </audio>
           <img id="sasha" src="assets/img/sashaAudioPortrait.png" class="img-fluid audioPortrait" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true" onClick="sashaPlay()">
-          <!-- <div class="playpause" onClick="sashaPlay()">
+          <div class="playpause" onClick="sashaPlay()">
             <input type="checkbox" value="None" id="playpause" name="check" />
             <label for="playpause"></label>
-          </div> -->
+          </div>
 
           <audio id="badger">
             <source src="assets/audio/badger.mp3" type="audio/mpeg" />
           </audio>
           <img id="badger" src="assets/img/badgerAudioPortrait.png" class="img-fluid audioPortrait" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" onClick="badgerPlay()">
-          <!-- <div class="playpause1" onClick="badgerPlay()">
+          <div class="playpause1" onClick="badgerPlay()">
             <input type="checkbox" value="None" id="playpause1" name="check" />
             <label for="playpause1"></label>
-          </div> -->
+          </div>
 
           <audio id="marty">
             <source src="assets/audio/marty.mp3" type="audio/mpeg" />
@@ -166,7 +226,7 @@
           <img id="eddie" src="assets/img/eddieAudioPortrait.png" class="img-fluid audioPortrait" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600" data-aos-once="true" onClick="eddiePlay()">
 
         </div>
-      </div> <!-- close AudioPortraits -->
+      </div> <!-- close AudioPortraits --> -->
 
       <div class="row">
         <div class="col-sm-12 text-center">
@@ -330,7 +390,7 @@
 
     var map = new mapboxgl.Map({
       container: 'map',
-      style: 'mapbox://styles/ryan-vallette/ck98r1edz06011imtub4miakr',
+      style: 'mapbox://styles/ryan-vallette/ck8ad8hxf0y3x1inz47q5pzj2',
       center: [39.778 / -82.442],
       zoom: 7.4,
       maxBounds: bounds, // Sets bounds as max
