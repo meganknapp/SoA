@@ -820,6 +820,10 @@ label {
     font-size: 60px;
   }
 
+  #map {
+    height: 350px;
+  }
+
   .subhed {
     font-size: 14px;
     width: 300px;
