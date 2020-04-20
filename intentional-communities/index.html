@@ -68,7 +68,7 @@
       <span class="hamburger" onclick="openNav()">&#9776;</span>
     </div><!-- close hamburger -->
     <a href="index.html">
-      <div ><img class="logo" src="assets/img/logo-circle.svg"></div>
+      <div><img class="logo" src="assets/img/logo-circle.svg"></div>
     </a> <!-- close logo -->
   </div> <!-- close navigation -->
 
@@ -238,11 +238,17 @@
 
   <script>
     var sasha = document.getElementById("sasha");
+    var badger = document.getElementById("badger");
+    var marty = document.getElementById("marty");
+    var eddie = document.getElementById("eddie");
     var isPlaying = false;
 
     function sashaPlay() {
       if (isPlaying) {
-        sasha.pause()
+        sasha.pause();
+        badger.pause();
+        marty.pause();
+        eddie.pause()
       } else {
         sasha.play();
       }
@@ -254,14 +260,12 @@
       isPlaying = false;
     };
 
-
-
-    var badger = document.getElementById("badger");
-    var isPlaying = false;
-
     function badgerPlay() {
       if (isPlaying) {
-        badger.pause()
+        badger.pause();
+        sasha.pause();
+        marty.pause();
+        eddie.pause()
       } else {
         badger.play();
       }
@@ -273,14 +277,12 @@
       isPlaying = false;
     };
 
-
-
-    var marty = document.getElementById("marty");
-    var isPlaying = false;
-
     function martyPlay() {
       if (isPlaying) {
-        marty.pause()
+        sasha.pause();
+        badger.pause();
+        marty.pause();
+        eddie.pause()
       } else {
         marty.play();
       }
@@ -292,13 +294,11 @@
       isPlaying = false;
     };
 
-
-
-    var eddie = document.getElementById("eddie");
-    var isPlaying = false;
-
     function eddiePlay() {
       if (isPlaying) {
+        sasha.pause();
+        badger.pause();
+        marty.pause();
         eddie.pause()
       } else {
         eddie.play();
@@ -316,7 +316,7 @@
 
 
 
-<!-- Mapbox Scripts -->
+  <!-- Mapbox Scripts -->
   <script>
     mapboxgl.accessToken =
       'pk.eyJ1Ijoicnlhbi12YWxsZXR0ZSIsImEiOiJjazZnbXN3ODkybDBjM21vYmQ1cGxiMjd5In0.VolIXH3LNtJjz9SgF_LpaQ';
@@ -340,7 +340,7 @@
     map.addControl(new mapboxgl.NavigationControl());
 
 
-    map.on('load', function () {
+    map.on('load', function() {
       map.addSource('places', {
         'type': 'geojson',
         'data': {
@@ -400,7 +400,7 @@
 
       // When a click event occurs on a feature in the places layer, open a popup at the
       // location of the feature, with description HTML from its properties.
-      map.on('click', 'places', function (e) {
+      map.on('click', 'places', function(e) {
         var coordinates = e.features[0].geometry.coordinates.slice();
         var description = e.features[0].properties.description;
 
@@ -418,12 +418,12 @@
       });
 
       // Change the cursor to a pointer when the mouse is over the places layer.
-      map.on('mouseenter', 'places', function () {
+      map.on('mouseenter', 'places', function() {
         map.getCanvas().style.cursor = 'pointer';
       });
 
       // Change it back to a pointer when it leaves.
-      map.on('mouseleave', 'places', function () {
+      map.on('mouseleave', 'places', function() {
         map.getCanvas().style.cursor = '';
       });
     });
