@@ -1,6 +1,10 @@
 /* ---------------------------------------------------
     UNIVERSAL STYLES
 ----------------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #d6d0c6;
   background-image: url("http://www.transparenttextures.com/patterns/concrete-wall.png");
@@ -84,7 +88,7 @@ a:active {
 
 .ssbtn {
   border-radius: 50px;
-  border: 3px solid #2C3415;
+  border: 3px solid #D6D0C6;
   color: #2C3415;
   background-color: #D6D0C6;
   overflow: hidden;
@@ -326,7 +330,6 @@ section {
 }
 
 
-
 .mouse {
   margin: 50px auto;
   width: 100px;
@@ -425,7 +428,7 @@ section {
 }
 
 .info {
-  padding: 200px 0px 180px 0px;
+  padding: 200px 0px 120px 0px;
 }
 
 .definition {
@@ -638,12 +641,12 @@ label{
 
 .copyright {
   margin-bottom: 1vh;
-  font-size: 12px;
+  font-size: 10px;
   font-family: 'Open Sans', sans-serif;
   color: #D6D0C6;
   position: absolute;
-  bottom: 0;
-  left: 0px;
+  left: 4em;
+  bottom: 2em;
 }
 
 .ssCredit {
