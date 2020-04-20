@@ -207,9 +207,11 @@
   <!-- THESE ARE BOOTSTRAP STYLES FOR EMBEDDING IFRAMES, ETC. Can be found on bootstrap documentation--->
   <!-- Note: style the slideshow through that html file/css... in this case, index-ss.html -->
   <!-- Style how that html file is embedded in this document... so how many columns, etc. -->
-  <div class="embed-responsive embed-responsive-16by9 reveal-resize">
-    <iframe src="index-ss.html"></iframe>
-  </div> <!-- close .embed-responsive -->
+  <div>
+    <div class="embed-responsive embed-responsive-16by9 reveal-resize">
+      <iframe src="index-ss.html"></iframe>
+    </div> <!-- close .embed-responsive -->
+  </div>
 
 
 
@@ -314,8 +316,7 @@
 
 
 
-
-  <!-- MAPBOX SCRIPTS BELLOW -->
+<!-- Mapbox Scripts -->
   <script>
     mapboxgl.accessToken =
       'pk.eyJ1Ijoicnlhbi12YWxsZXR0ZSIsImEiOiJjazZnbXN3ODkybDBjM21vYmQ1cGxiMjd5In0.VolIXH3LNtJjz9SgF_LpaQ';
@@ -333,14 +334,13 @@
       center: [39.778 / -82.442],
       zoom: 7.4,
       maxBounds: bounds, // Sets bounds as max
-      hash: true,
     });
 
     // Add zoom and rotation controls to the map.
     map.addControl(new mapboxgl.NavigationControl());
 
 
-    map.on('load', function() {
+    map.on('load', function () {
       map.addSource('places', {
         'type': 'geojson',
         'data': {
@@ -400,7 +400,7 @@
 
       // When a click event occurs on a feature in the places layer, open a popup at the
       // location of the feature, with description HTML from its properties.
-      map.on('click', 'places', function(e) {
+      map.on('click', 'places', function (e) {
         var coordinates = e.features[0].geometry.coordinates.slice();
         var description = e.features[0].properties.description;
 
@@ -418,12 +418,12 @@
       });
 
       // Change the cursor to a pointer when the mouse is over the places layer.
-      map.on('mouseenter', 'places', function() {
+      map.on('mouseenter', 'places', function () {
         map.getCanvas().style.cursor = 'pointer';
       });
 
       // Change it back to a pointer when it leaves.
-      map.on('mouseleave', 'places', function() {
+      map.on('mouseleave', 'places', function () {
         map.getCanvas().style.cursor = '';
       });
     });

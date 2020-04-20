@@ -818,10 +818,6 @@ color: #6B5D48;
     font-size: 60px;
   }
 
-  .container {
-    width: 100% !important;
-]  }
-
   .subhed {
     font-size: 14px;
     width: 300px;
@@ -937,6 +933,12 @@ color: #6B5D48;
 ----------------------------------------------------- */
 
 @media screen and (max-width: 633px) {
+
+
+    .container {
+      width: 100% !important;
+    }
+
 
   #blcLandingImg {
     border-radius: 0px;
