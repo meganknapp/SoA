@@ -62,11 +62,9 @@
         <a href="blackLocustCollective.html">Black Locust Collective</a>
         <a href="currents.html">Currents</a>
         <a href="subamuh.html">SuBAMUH</a>
-      </div> <!-- close overlay-content -->
-    </div> <!-- close myNav -->
-    <div class="hamburgerBg">
-      <span class="hamburger" onclick="openNav()">&#9776;</span>
-    </div><!-- close hamburger -->
+      </div>
+    </div>
+    <div class="hamburgerBg"> <span class="hamburger" onclick="openNav()">&#9776;</span> </div><!-- close hamburger -->
     <a href="index.html">
       <div><img class="logo" src="assets/img/logo-circle.svg"></div>
     </a> <!-- close logo -->
@@ -334,7 +332,6 @@
 
 
 
-  <!-- MAPBOX SCRIPTS BELLOW -->
   <script>
     mapboxgl.accessToken =
       'pk.eyJ1Ijoicnlhbi12YWxsZXR0ZSIsImEiOiJjazZnbXN3ODkybDBjM21vYmQ1cGxiMjd5In0.VolIXH3LNtJjz9SgF_LpaQ';
@@ -348,9 +345,9 @@
 
     var map = new mapboxgl.Map({
       container: 'map',
-      style: 'mapbox://styles/ryan-vallette/ck8ad8hxf0y3x1inz47q5pzj2',
-      center: [39.778 / -82.442],
-      zoom: 7.4,
+      style: 'mapbox://styles/ryan-vallette/ck98r1edz06011imtub4miakr',
+      center: [-82.733, 40.196],
+      zoom: 6.15,
       maxBounds: bounds, // Sets bounds as max
     });
 
@@ -408,7 +405,7 @@
         'source': 'places',
         'layout': {
           'icon-image': '{icon}-15',
-          'icon-size': 1.75,
+          'icon-size': 1.25,
           'icon-allow-overlap': true
         },
         "paint": {
@@ -448,16 +445,6 @@
   </script>
   <!-- End mapbox scripps -->
 
-  <!-- NavBar Sidebar -->
-  <script>
-    function openNav() {
-      document.getElementById("myNav").style.height = "100%";
-    }
-
-    function closeNav() {
-      document.getElementById("myNav").style.height = "0%";
-    }
-  </script>
 
 
 
